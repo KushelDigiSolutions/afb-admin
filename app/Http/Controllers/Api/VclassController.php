@@ -101,7 +101,7 @@ class VclassController extends Controller
 			}
 			if(!empty($event->instruct_pic)){
 				foreach($event->instruct_pic as $inst){
-				$instruct_pic[] = asset('backend/admin/images/vclass_management/vclass/' . $inst);
+				$instruct_pic[] = asset('backend/admin/images/vclass_management/instructors/' . $inst);
 				}
 			}
 			
@@ -207,7 +207,7 @@ class VclassController extends Controller
 					
 					if(!empty($event->instruct_pic)){
 						foreach($event->instruct_pic as $instruct_pic){
-                    		$dataArray['classes'][$key]['instruct_pic'][] = asset('backend/admin/images/vclass_management/vclass/' . $instruct_pic);}
+                    		$dataArray['classes'][$key]['instruct_pic'][] = asset('backend/admin/images/vclass_management/instructors/' . $instruct_pic);}
 					}
                     $dataArray['classes'][$key]['seo_title'] = $event->seo_title;
                     $dataArray['classes'][$key]['seo_description'] = $event->seo_description;

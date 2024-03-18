@@ -64,11 +64,11 @@
                                                     recommended to be unique.</div>
                                             </div>
                                             <div class="mb-10 fv-row">
-                                                <label class="required form-label">Location Country Name</label>
+                                                <label class="required form-label">Country Name</label>
                                                 <input type="text" name="country" class="form-control mb-2"
                                                     placeholder="Country Name..." value="{{ $state->country }}"
                                                     required>
-                                                <div class="fs-7" style="color:red">A Location Country name is required and
+                                                <div class="fs-7" style="color:red">A Country name is required and
                                                     recommended to be unique.</div>
                                             </div>
                                         </div>

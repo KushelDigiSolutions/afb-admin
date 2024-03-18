@@ -222,6 +222,7 @@ class LodgingRentalController extends Controller
             }
           
         }
+        
         $lodging->state_id = $request->state_id;
         $lodging->location = $request->location;
         $lodging->location_iframe = $request->location_iframe;

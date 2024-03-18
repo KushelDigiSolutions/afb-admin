@@ -5,7 +5,7 @@
 		<!--begin::Toolbar-->
             <div class="custom-app-toolbar">
                 <div class="left">
-                    <p>Lodging Rentals</p>
+                    <p>Location Rentals</p>
                     <ul>
                         <li>
                             <a href="#">Home</a>

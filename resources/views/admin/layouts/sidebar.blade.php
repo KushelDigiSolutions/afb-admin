@@ -197,6 +197,18 @@
                         'admin.lodging-categories.create',
                         'admin.lodging-categories.edit',
                         'admin.lodging-categories.show',
+                        'admin.amenities.index',
+                        'admin.amenities.create',
+                        'admin.amenities.edit',
+                        'admin.amenities.show',
+                        'admin.states.index',
+                        'admin.states.create',
+                        'admin.states.edit',
+                        'admin.states.show',
+                        'admin.features.index',
+                        'admin.features.create',
+                        'admin.features.edit',
+                        'admin.features.show',
                     ])) {{ 'hover show' }} @endif">
                         <span class="menu-link pro-hover @if (in_array(Route::currentRouteName(), [
                                 'admin.lodging.index',
@@ -207,6 +219,18 @@
                                 'admin.lodging-categories.create',
                                 'admin.lodging-categories.edit',
                                 'admin.lodging-categories.show',
+                                'admin.amenities.index',
+                                'admin.amenities.create',
+                                'admin.amenities.edit',
+                                'admin.amenities.show',
+                                'admin.states.index',
+                                'admin.states.create',
+                                'admin.states.edit',
+                                'admin.states.show',
+                                'admin.features.index',
+                                'admin.features.create',
+                                'admin.features.edit',
+                                'admin.features.show',
                             ])) {{ 'is-active' }} @endif ">
                             <span class="menu-icon">
                                 <i class="ki-duotone ki-calendar fs-2">
@@ -215,7 +239,7 @@
                                     <span class="path3"></span>
                                 </i>
                             </span>
-                            <span class="menu-title">Manage Lodging Rentals</span>
+                            <span class="menu-title">Manage Location Rentals</span>
                             <span class="menu-arrow"></span>
                         </span>
 						
@@ -304,7 +328,7 @@
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
-                                        <span class="menu-title">Lodging Rentals</span>
+                                        <span class="menu-title">Location Rentals</span>
                                     </a>
                                 </div>
                             </div>
@@ -603,7 +627,7 @@
                                 <span class="path6"></span>
                             </i>
                         </span>
-                        <span class="menu-title">Lodging Rentals</span>
+                        <span class="menu-title">Location Rentals</span>
                     </a>
                 </div>
 

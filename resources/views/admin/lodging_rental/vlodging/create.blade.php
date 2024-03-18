@@ -97,7 +97,7 @@
                 <!-- @isset($page_title)
                         {{ $page_title }}
                     @endisset -->
-                Lodging Rentals
+                Location Rentals
             </p>
             <ul>
                 <li>
@@ -128,7 +128,7 @@
                                             <input type="text" name="title"
                                                 class="form-control title_can form-control11 mb-2"
                                                 oninput="validate(this, 'title-warn')" placeholder="Title" required="">
-                                            <div id="title-warn" class="text-warning2 none fs-7">This Lodging title is
+                                            <div id="title-warn" class="text-warning2 none fs-7">This Location Rental title is
                                                 already exists</div>
                                         </div>
 

@@ -162,7 +162,7 @@
                                                         data-control="select2"  name="state_id" data-placeholder="Select an option"
                                                         data-allow-clear="true">
                                                         @foreach ($states as $state)
-                                                            <option value="{{ $category->id }}"
+                                                            <option value="{{ $state->id }}"
                                                                 @if ($state->id == $lodging->state_id) selected @endif>
                                                                 {{ $state->name }}</option>
                                                         @endforeach

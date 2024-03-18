@@ -10,7 +10,7 @@
     <div class="custom-app-toolbar">
         <div class="left">
             <p>
-                Lodging Rentals
+            Location Rental
             </p>
             <ul>
                 <li>

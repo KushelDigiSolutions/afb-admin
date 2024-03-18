@@ -13,15 +13,28 @@ class EventController extends Controller
 
     public function getEvent()
     {
-        $events = Event::where('is_delete', '0')->where('end_date', '>', date('Y-m-d H:i:s'))->orderBy('date', 'desc')->get();
-		
+        $currentDateTime = date('Y-m-d H:i:s');
+		$events = Event::where(function($query) use ($currentDateTime) {
+            $query->where('end_date', '>=', $currentDateTime)
+                    ->orWhere(function($subQuery) use ($currentDateTime) {
+                        $subQuery->where('single_day', '1')
+                        ->whereRaw("CONCAT(date, ' ', end_time) > ?", [$currentDateTime]);
+                    });
+            })->orderBy('date', 'desc')->get();
         return response()->json(['events' => $events]);
     }
 
     public function getEventApp()
     {
-        $events = Event::where('is_delete', '0')->where('end_date', '>', date('Y-m-d H:i:s'))->orderBy('date', 'desc')->get();
-	
+        $currentDateTime = date('Y-m-d H:i:s');
+		$events = Event::where(function($query) use ($currentDateTime) {
+            $query->where('end_date', '>=', $currentDateTime)
+                    ->orWhere(function($subQuery) use ($currentDateTime) {
+                        $subQuery->where('single_day', '1')
+                        ->whereRaw("CONCAT(date, ' ', end_time) > ?", [$currentDateTime]);
+                    });
+            })->orderBy('date', 'desc')->get();
+        
         $dataArray['event'] = [];
 
         foreach ($events as $key => $event) {
@@ -95,15 +108,24 @@ class EventController extends Controller
     public function getEventByCategory(Request $request, $slug)
     {
         $categories = EventCategory::select('id', 'name', 'slug', 'image', 'seo_title', 'seo_description')->where('is_active', '1')->where('is_delete', '0')->get();
+        $currentDateTime = date('Y-m-d H:i:s');
         foreach ($categories as $category) {
             $category->image = asset('backend/admin/images/event_management/categories/' . $category->image);
-            $category->count = Event::where('is_delete', '0')->where('is_active', '1')->where('end_date', '>', date('Y-m-d H:i:s'))->whereJsonContains('category_ids', '' . $category->id)->orderByDesc('date')->count();
+            $category->count = Event::where(function($query) use ($currentDateTime) {
+                $query->where('end_date', '>=', $currentDateTime)
+                        ->orWhere(function($subQuery) use ($currentDateTime) {
+                            $subQuery->where('single_day', '1')
+                            ->whereRaw("CONCAT(date, ' ', end_time) > ?", [$currentDateTime]);
+                        });
+                })->whereJsonContains('category_ids', '' . $category->id)->orderByDesc('date')->count();
+            
         }
         $dataArray['category_all'] = $categories;
 
         $id = EventCategory::where('slug', $slug)->first();
         $dataArray['event'] = [];
-
+        $currentDateTime = date('Y-m-d H:i:s');
+        $categoryId = $id->id;
         if ($id) {
             $dataArray['category']['id'] = $id->id;
             $dataArray['category']['name'] = $id->name;
@@ -114,15 +136,33 @@ class EventController extends Controller
             $dataArray['category']['created_at'] = $id->created_at;
             $dataArray['category']['slug'] = $id->slug;
             if ($request->filter) {
-    if($request->limit){
-        $events = Event::where('is_delete', '0')->where('is_active', '1')->where('end_date', '>', date('Y-m-d H:i:s'))->whereJsonContains('category_ids', '' . $id->id)->orderBy('date', $request->filter)->limit($request->limit)->get();
-    }else{
-        $events = Event::where('is_delete', '0')->where('is_active', '1')->where('end_date', '>', date('Y-m-d H:i:s'))->whereJsonContains('category_ids', '' . $id->id)->orderBy('date', $request->filter)->get();
-    }
-} else {
-    $events = Event::where('is_delete', '0')->where('is_active', '1')->where('end_date', '>', date('Y-m-d H:i:s'))->whereJsonContains('category_ids', '' . $id->id)->orderBy('date', 'desc')->get();
-
-}
+                if($request->limit){
+                    $events = Event::where(function($query) use ($currentDateTime) {
+                        $query->where('end_date', '>=', $currentDateTime)
+                                ->orWhere(function($subQuery) use ($currentDateTime) {
+                                    $subQuery->where('single_day', '1')
+                                    ->whereRaw("CONCAT(date, ' ', end_time) > ?", [$currentDateTime]);
+                                });
+                        })->whereJsonContains('category_ids', '' . $category->id)->orderBy('date', $request->filter)->limit($request->limit)->get();
+                }else{
+                    $events = Event::where(function($query) use ($currentDateTime) {
+                        $query->where('end_date', '>=', $currentDateTime)
+                                ->orWhere(function($subQuery) use ($currentDateTime) {
+                                    $subQuery->where('single_day', '1')
+                                    ->whereRaw("CONCAT(date, ' ', end_time) > ?", [$currentDateTime]);
+                                });
+                        })->whereJsonContains('category_ids', '' . $category->id)->orderBy('date', $request->filter)->get();
+                }
+        } else {
+            
+            $events = Event::where(function($query) use ($currentDateTime) {
+                $query->where('end_date', '>=', $currentDateTime)
+                        ->orWhere(function($subQuery) use ($currentDateTime) {
+                            $subQuery->where('single_day', '1')
+                            ->whereRaw("CONCAT(date, ' ', end_time) > ?", [$currentDateTime]);
+                        });
+                })->whereJsonContains('category_ids', '' . $category->id)->orderBy('date', "desc")->get();
+        }
 
             if ($events) {
                 foreach ($events as $key => $event) {
