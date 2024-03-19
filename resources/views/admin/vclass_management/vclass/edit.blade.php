@@ -301,7 +301,7 @@
                                             <div class="row">
 												<div class="col-md-7 mb-12">
                                                 <div class="col-md-12 mb-5">
-                                                    <label class="required form-label">Instructor Name</label>
+                                                    <label class=" form-label">Instructor Name</label>
                                                     <input type="text" name="instruct_name"  value="{{ $vclass->instruct_name }}"
                                                         class="form-control mb-2 form-control11 title_can"
                                                         placeholder="Name">
@@ -312,7 +312,7 @@
                                                 </div>
 												 </div>
 												<div class="col-md-5 mb-12">
-													<label class="form-label required">Instructor Pic</label>
+													<label class="form-label">Instructor Pic</label>
                                                     <label class="lbl-eventMedia" for="eventMedia">
                                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                                             width="42px" height="42px"
