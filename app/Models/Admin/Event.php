@@ -17,6 +17,7 @@ class Event extends Model
         'images',
         'number_of_tickets',
         'ticket_price',
+        'location_iframe',
         'location',
         'category_ids',
         'date',

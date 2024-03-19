@@ -72,6 +72,7 @@ class EventController extends Controller
         $event->images = $images;
         $event->number_of_tickets = $request->number_of_tickets;
         // $event->ticket_price = $request->ticket_price;
+        $event->location_iframe = $request->location_iframe;
         $event->location = $request->location;
         if ($request->has('single_day')) {
             $event->date = $request->date;
@@ -231,6 +232,7 @@ class EventController extends Controller
         }
         $event->number_of_tickets = $request->number_of_tickets;
         // $event->ticket_price = $request->ticket_price;
+        $event->location_iframe = $request->location_iframe;
         $event->location = $request->location;
         if ($request->has('single_day')) {
             $event->date = $request->date;

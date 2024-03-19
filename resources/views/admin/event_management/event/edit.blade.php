@@ -160,13 +160,19 @@
                                                 </div>
                                             </div>
 
-                                            {{-- <div class="row">
-                                                    <div class="col-md-12 mb-10">
-                                                        <label class="required form-label">Event Location</label>
-                                                        <input type="text" name="location" class="form-control mb-2" value="{{$event->location}}" placeholder="An event venue" required>
-                                                        <div class="text-muted fs-7">Set the Event Location.</div>
-                                                    </div>
-                                                </div> --}}
+                                            <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-10 fv-row">
+                                                    <label class="form-label">Location Map</label>
+                                                    <input type="text" name="location_iframe"
+                                                        value="{{ $event->location_iframe }}"
+                                                        class="form-control title_can form-control11 mb-2"
+                                                        oninput="validate(this, 'title-warn')" placeholder="Embeded Map of this Location" required="">
+                                                    <div id="title-warn" class="text-warning2 none fs-7">Please add the location map</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
 
                                             <div class="row">
 

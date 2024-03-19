@@ -44,6 +44,7 @@ class EventController extends Controller
             $dataArray['event'][$key]['description'] = $event->description;
             $dataArray['event'][$key]['number_of_tickets'] = $event->number_of_tickets;
             $dataArray['event'][$key]['ticket_price'] = $event->ticket_price;
+            $dataArray['event'][$key]['location_iframe'] = $event->location_iframe;
             $dataArray['event'][$key]['location'] = $event->location;
             $dataArray['event'][$key]['date'] = $event->date;
             $dataArray['event'][$key]['start_date'] = $event->start_date;
@@ -78,6 +79,7 @@ class EventController extends Controller
             $dataArray['event']['description'] = $event->description;
             $dataArray['event']['number_of_tickets'] = $event->number_of_tickets;
             $dataArray['event']['ticket_price'] = $event->ticket_price;
+            $dataArray['event']['location_iframe'] = $event->location_iframe;
             $dataArray['event']['location'] = $event->location;
             $dataArray['event']['date'] = $event->date;
             $dataArray['event']['start_date'] = $event->start_date;
