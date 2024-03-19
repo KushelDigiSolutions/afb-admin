@@ -661,7 +661,9 @@
 <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
 <script>
     ClassicEditor
-        .create(document.querySelector('#editor'))
+        .create(document.querySelector('#editor'),{
+            removePlugins: ['CKFinderUploadAdapter', 'CKFinder', 'EasyImage', 'Image', 'ImageCaption', 'ImageStyle', 'ImageToolbar', 'ImageUpload', 'MediaEmbed'],
+        })
         .then(editor => {
             console.log(editor);
         })
@@ -671,7 +673,9 @@
 </script>
 <script>
     ClassicEditor
-        .create(document.querySelector('#editor1'))
+        .create(document.querySelector('#editor1'),{
+            removePlugins: ['CKFinderUploadAdapter', 'CKFinder', 'EasyImage', 'Image', 'ImageCaption', 'ImageStyle', 'ImageToolbar', 'ImageUpload', 'MediaEmbed'],
+        })
         .then(editor1 => {
             console.log(editor1);
         })
