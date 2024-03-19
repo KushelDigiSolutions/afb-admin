@@ -393,7 +393,7 @@
                                     fill="white" />
                             </svg>
 
-                            <span class="indicator-label">Update Cabin</span>
+                            <span class="indicator-label">Update Location</span>
                         </button>
                     </div>
                 </div>

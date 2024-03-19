@@ -370,7 +370,7 @@
                                     fill="white" />
                             </svg>
 
-                            <span class="indicator-label">Save Cabin</span>
+                            <span class="indicator-label">Save Location</span>
                         </button>
                     </div>
                 </div>
