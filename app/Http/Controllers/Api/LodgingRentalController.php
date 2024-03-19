@@ -11,6 +11,7 @@ use App\Models\Admin\States;
 use Illuminate\Http\Request;
 use App\Models\Admin\LodgingCategory;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 
 class LodgingRentalController extends Controller
 {
@@ -88,15 +89,22 @@ class LodgingRentalController extends Controller
 
     public function searchLodgingHome(Request $request,$slug = null){
        
+        
         $limit = !empty($request->input('limit'))?$request->input('limit'): 10;
 		$offset = !empty($request->input('offset'))?$request->input('offset'): 0;
 		$filter = !empty($request->input('filter'))?$request->input('filter'): 'desc';
-        $query = !empty($request->input('query'))?$request->input('query'): '';
+        $state_id = !empty($request->input('query'))?$request->input('query'): 1;
         $checkin = !empty($request->input('checkin'))?$request->input('checkin'): '';
         $checkout = !empty($request->input('checkout'))?$request->input('checkout'): '';
         $guest = !empty($request->input('guest'))?$request->input('guest'): '';
-        $data["items"] = Lodging::where('title', 'like', "%$query%")->orWhere('description', 'like', "%$query%")->where('is_delete', '0')->orderBy('created_at', $filter)->offset($offset)->limit($limit)->get();
-        $data["total_count"] = Lodging::where('title', 'like', "%$query%")->orWhere('description', 'like', "%$query%")->where('is_delete', '0')->orderBy('created_at', $filter)->offset($offset)->limit($limit)->count();
+        $guest = explode(",",$guest);
+        $checkIndate = Carbon::createFromTimestamp($checkin)->toDateString();
+        $checkOutdate = Carbon::createFromTimestamp($checkout)->toDateString();
+        
+        $adult = str_replace("a","",$guest[0]);
+
+        $data["items"] = Lodging::where('state_id',$state_id)->where('check_in','<=',$checkIndate)->where('room_capacity','>=',$adult)->where('check_out','>=',$checkOutdate)->where('is_delete', '0')->orderBy('created_at', $filter)->offset($offset)->limit($limit)->get();
+        $data["total_count"] = Lodging::where('is_delete', '0')->orderBy('created_at', $filter)->offset($offset)->limit($limit)->count();
         $data["image_path"] = url("backend/admin/images/lodging_rental/vclasss/"); 
         return response()->json($data);
     }
