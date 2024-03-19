@@ -163,7 +163,7 @@ class LodgingRentalController extends Controller
             $dataArray['lodging']['short_description'] = $lodging->short_description;
             $dataArray['lodging']['description'] = $lodging->description;
             $dataArray['lodging']['number_of_tickets'] = $lodging->number_of_tickets;
-            $dataArray['lodging']['ticket_price'] = $lodging->ticket_price;
+            $dataArray['lodging']['price'] = $lodging->price;
             $dataArray['lodging']['location'] = $lodging->location;
             $dataArray['lodging']['location_iframe'] = $lodging->location_iframe;
             $dataArray['lodging']['date'] = $lodging->date;
