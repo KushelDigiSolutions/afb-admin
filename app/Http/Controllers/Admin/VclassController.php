@@ -92,8 +92,8 @@ class VclassController extends Controller
         $vclass->single_day = $request->single_day;
         $vclass->all_day = $request->all_day;
 		$vclass->is_active = $request->is_active;
-        $vclass->instruct_name = $request->instruct_name;
-        $vclass->instruct_bio = $request->instruct_bio;
+        $vclass->instruct_name = !empty($request->instruct_name)?$request->instruct_name: "";
+        $vclass->instruct_bio = !empty($request->instruct_bio)?$request->instruct_bio: "";
         
 		if(!empty($request->file('instruct_pic'))){
 			 $images2 = array();
@@ -261,7 +261,8 @@ class VclassController extends Controller
                 $vclass->instruct_pic = $images2;
             }
         }
-
+        $vclass->instruct_name = !empty($request->instruct_name)?$request->instruct_name: "";
+        $vclass->instruct_bio = !empty($request->instruct_bio)?$request->instruct_bio: "";
         $vclass->total_student = $request->number_of_tickets;
         $vclass->location = $request->location;
         if ($request->has('single_day')) {
