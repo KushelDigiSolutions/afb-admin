@@ -97,7 +97,7 @@
                 <!-- @isset($page_title)
                         {{ $page_title }}
                     @endisset -->
-                Lodging Rentals
+                Location Rentals
             </p>
             <ul>
                 <li>
