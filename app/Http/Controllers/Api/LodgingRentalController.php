@@ -62,6 +62,7 @@ class LodgingRentalController extends Controller
 	
 	 public function getLodgingHome()
     {
+        $data["categories"] = LodgingCategory::select('id', 'name', 'slug', 'image', 'seo_title', 'seo_description')->where('is_delete', '0')->get(); 
         $data["top_banner"]["title"] = "Discover the world of Cabins & Aampsites";
         $data["top_banner"]["sub_title"] = "Cabin rentals around the world: From winter to exotic cabins, find your perfect match below!";
         $data["top_banner"]["banner"] = "https://s3-alpha-sig.figma.com/img/d0fb/f182/91b15cea105c1ccf42b3d7dcab1eca23?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XUXU8tImGsUkWHbymbXWnHdiSOscUYwwvAhzMU41UzPz6eBy32mD0V5xl6gc15xYY06N5ce6k0qdsBH~anGrJ~3lWvKrt3uhI3etjOxEmJcq3ddQBtjlv2GJQx7~eHi3wCyJ62UhvbyeNDnAj350CJEz0eE5EtKIwdVBG~Y~teHx-T8cbZUjvFaI5-JiDBRsku1LLaHdswpII1YusHl6MrP6N0ZC21XIlHBBJT6n6d~YhLAo1Ga1q2yc9UUEtW~u1X0Afh2Fkg4pA0CIdhP7YFAxnaV1EBleIhypP4b3tHhhyK0ejarNL7~xcND8ijIgVVP7o-mlRrD4FZ873MeJiw__";
