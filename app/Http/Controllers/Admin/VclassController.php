@@ -262,12 +262,7 @@ class VclassController extends Controller
             }
         }
 
-       // dd($vclass->images,$request->oldImages);
-        // Edited By swapin
-        // SQLSTATE[42S22]: Column not found: 1054 Unknown column 'number_of_tickets' in 'field list'
         $vclass->total_student = $request->number_of_tickets;
-        //Swapin End
-        // $vclass->ticket_price = $request->ticket_price;
         $vclass->location = $request->location;
         if ($request->has('single_day')) {
             $vclass->date = $request->date;
@@ -278,15 +273,11 @@ class VclassController extends Controller
             $vclass->single_day = '0';
         }
         if (!$request->has('all_day')) {
-            // Commented By swapin for SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_time' in 'field list'
-            // Suggest to tackle by using cast in model
-            // $vclass->start_time = $request->start_time;
-            // $vclass->end_time = $request->end_time;
-            // End Swapin
             $vclass->all_day = '0';
         } else {
             $vclass->all_day = '1';
         }
+        $vclass->video = $request->video;
         $vclass->category_ids = $request->category_ids;
         $vclass->seo_title = $request->seo_title;
         $vclass->seo_description = $request->seo_description;
