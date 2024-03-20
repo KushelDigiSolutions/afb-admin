@@ -1529,7 +1529,7 @@ web.Sections.add("demo/webban", {
     <div class="col-md-5 g-mb-30">
       <img class="img-fluid mb-4" src="../../../backend/admin/media/img-temp/homeban.png" alt="Image description">
       <div class="text-center">
-        <span class="g-color-gray-dark-v4">Also available for <a class="u-link-v5 g-color-primary g-color-black--hover g-font-weight-600" href="#">Android <i class="g-font-size-20 ml-2 fa fa-android"></i></a></span>
+        <span class="g-color-gray-dark-v4">Also available for <a class="u-link-v5 g-color-primary g-color-black--hover g-font-weight-600" href="#">Android </a></span>
       </div>
     </div>
   </div>
@@ -1630,7 +1630,7 @@ web.Sections.add("demo/perfect", {
           <p class="g-color-gray-dark-v4 g-font-size-16">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <a class="btn u-btn-outline-primary g-font-weight-600 g-rounded-50 g-px-30 g-py-13" href="#">See more
-            <i class="ml-2 fa fa-long-arrow-right"></i></a>
+            </a>
       </div>
     </div>
 
@@ -1666,8 +1666,8 @@ web.Sections.add("demo/gold", {
             <h3 class="h1 g-color-black mb-4">Goldrush</h3>
             <p class="g-color-gray-dark-v4 g-font-size-16">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           </div>
-          <a class="btn u-btn-outline-primary g-font-weight-600 g-rounded-50 g-px-30 g-py-13" href="#">See more
-              <i class="fa-long-arrow-right"></i></a>
+          <a class="btn u-btn-outline-primary g-font-weight-600 g-rounded-50 g-px-30 g-py-13" href="#">See more</a>
+              
         </div>
       </div>
 
