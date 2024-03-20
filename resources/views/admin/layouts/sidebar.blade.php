@@ -3,7 +3,7 @@
     data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
         <a href="{{ route('admin.dashboard') }}">
-            <img alt="Logo" src="{{ asset('./logo.png') }}" class="yogi app-sidebar-logo-default" />
+            {{-- <img alt="Logo" src="{{ asset('./logo.png') }}" class="yogi app-sidebar-logo-default" /> --}}
             <img alt="Logo" src="{{ asset('./small-logo.png') }}" class="h-20px app-sidebar-logo-minimize" />
         </a>
         <div id="kt_app_sidebar_toggle"
