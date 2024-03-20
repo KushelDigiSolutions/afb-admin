@@ -134,7 +134,7 @@ web.Sections.add("hero/centered-section", {
   image: "../../../backend/admin/media/sys/centered-section.png",
   html: `<section>
   <div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../../../backend/admin/media/logo.png" alt="Logo" width="160" height="57">
+   
     <h1 class="display-5 fw-bold">Centered Section</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -997,9 +997,9 @@ web.Sections.add("demo/creative", {
           </div>
 
           <a href="#" class="btn u-btn-primary u-shadow-v21 g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
-            <i class="icon-layers g-pos-rel g-top-1 g-mr-5"></i> Buy Full Version
+            <i class="icon-layers g-pos-rel g-top-1 g-mr-5"></i>Learn More
           </a>
-          <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Lorem Ipsum is simply dummy text of the printing.</small>
+       
         </div>
 
         <div class="col-md-6 align-self-center text-center g-overflow-hidden">
@@ -1040,9 +1040,9 @@ web.Sections.add("demo/digital", {
         </div>
 
         <a href="#" class="btn u-btn-primary u-shadow-v21 g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
-          <i class="icon-pie-chart g-pos-rel g-top-1 g-mr-5"></i> Buy Full Version
+          <i class="icon-pie-chart g-pos-rel g-top-1 g-mr-5"></i> Learn More
         </a>
-        <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</small>
+        
       </div>
     </div>
   </div>
