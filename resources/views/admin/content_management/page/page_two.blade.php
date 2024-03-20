@@ -87,7 +87,7 @@
                   </div>
 
                   <div>
-                    {{-- <!--begin::Toolbar-->
+                    <!--begin::Toolbar-->
                     <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
                         <!--begin::Toolbar container-->
                         <div id="kt_app_toolbar_container" class="app-container container-fluid d-flex flex-stack">
@@ -99,7 +99,7 @@
                                     Website Pages</h1>
                                 <p>Select a site to edit, view and open it dashboard</p>
                             </div>
-                            <!--end::Page title--> --}}
+                            <!--end::Page title-->
 
                             <!--begin::Actions-->
                             <div class="d-flex align-items-center gap-2 gap-lg-3">
