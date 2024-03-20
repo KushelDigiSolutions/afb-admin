@@ -1,4 +1,4 @@
-/* AFB HOME SECTIONS */
+/* AFB HOME SECTION*/
 @font-face {
   font-family: LoveloBold;
   src: url('../../../backend/admin/lovelo/Lovelo\ Line\ Bold.otf');
@@ -25,7 +25,7 @@ p.lead{color:#000;}
 
 .header-banner H1{font-family: LoveloBlack;color:#fff;text-align:left ;}
 .afbhome H2{font-family: LoveloBlack;color:#fff;text-align:left ;}
-p{text-align:left;font-family: "Poppins", sans-serif;color:#fff;font-size:18px; margin-bottom: 0px;}
+
 
 .ice {padding-top:4%;background-position-x: center;background-position-y: center;background-size: cover;
   background-repeat: no-repeat;height:296px;}
@@ -2566,19 +2566,16 @@ p{text-align:left;font-family: "Poppins", sans-serif;color:#fff;font-size:18px; 
         .pbc-fitness-sport-7863 .parent .boxs{
             width: calc(33.33% - 17px);
         }
-.pbc-fitness-sport-7863 .parent .boxy{
-            width: calc(33.33% - 17px);height:140px;
-        }
         .pbc-fitness-sport-7863 .parent .boxs video{
             width: 100%;
-            border-radius: 0px;
+            border-radius: 40px;
             height: 100%;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), lightgray 50% / cover no-repeat, #D9D9D9;
         }
-        .pbc-fitness-sport-7863 .parent .boxy iframe{
+        .pbc-fitness-sport-7863 .parent .boxs iframe{
             width: 100%;
-            border-radius: 0px;
-            height: 160%;
+            border-radius: 40px;
+            height: 100%;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), lightgray 50% / cover no-repeat, #D9D9D9;
         }
       
