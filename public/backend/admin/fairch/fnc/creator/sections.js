@@ -1,6 +1,6 @@
 web.SectionsGroup["STANDARD SECTIONS"] = ["Slider/Slider-3","hero/centered-section","hero/center-aligned-with-image","hero/left-aligned-with-image", 
 "hero/right-aligned-with-image","hero/border-with-cropped-image","bootstrap4/photo-gallery","bootstrap4/one-column", "bootstrap4/two-column-section", 
-"bootstrap4/three-column-section", "Ads/slideAds", "demo/text-img","demo/img-text","demo/abt", "demo/im2col","demo/Quote","demo/2ct","demo/3card","demo/faq", 
+"bootstrap4/three-column-section", "Ads/slideAds", "demo/text-img","demo/img-text","demo/abt", "demo/im2col","demo/Quote","demo/2ct","demo/3card",
 "demo/creative","demo/digital","demo/team","demo/3colcard","demo/abtco","demo/ln", "demo/services","demo/abtgood", "demo/webban","demo/serlist", 
 "demo/perfect", "demo/gold"];
 
