@@ -112,6 +112,7 @@ class EventController extends Controller
         $currentDateTime = date('Y-m-d H:i:s');
         foreach ($categories as $category) {
             $category->image = asset('backend/admin/images/event_management/categories/' . $category->image);
+            
             $category->count = Event::where(function($query) use ($currentDateTime) {
                 $query->where('end_date', '>=', $currentDateTime)
                         ->orWhere(function($subQuery) use ($currentDateTime) {
