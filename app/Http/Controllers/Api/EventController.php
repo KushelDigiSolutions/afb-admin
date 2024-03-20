@@ -10,7 +10,6 @@ use App\Http\Controllers\Controller;
 
 class EventController extends Controller
 {
-
     public function getEvent()
     {
         $currentDateTime = date('Y-m-d H:i:s');
