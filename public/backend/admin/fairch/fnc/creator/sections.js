@@ -1,6 +1,6 @@
 web.SectionsGroup["STANDARD SECTIONS"] = ["Slider/Slider-3","hero/centered-section","hero/center-aligned-with-image","hero/left-aligned-with-image", 
 "hero/right-aligned-with-image","hero/border-with-cropped-image","bootstrap4/photo-gallery","bootstrap4/one-column", "bootstrap4/two-column-section", 
-"bootstrap4/three-column-section", "Ads/slideAds", "demo/text-img","demo/img-text","demo/abt", "demo/im2col","demo/Quote","demo/2ct","demo/3card","demo/faq", 
+"bootstrap4/three-column-section", "Ads/slideAds", "demo/text-img","demo/img-text","demo/abt", "demo/im2col","demo/Quote","demo/2ct","demo/3card", 
 "demo/creative","demo/digital","demo/team","demo/3colcard","demo/abtco","demo/ln", "demo/services","demo/abtgood", "demo/webban","demo/serlist", 
 "demo/perfect", "demo/gold"];
 
@@ -572,7 +572,7 @@ web.Sections.add("demo/text-img", {
                 <em class="g-color-gray-light-v5 g-font-size-120 g-pos-abs g-top-minus-40 g-left-minus-15 g-z-index-minus-1">
                     “
                   </em>
-                <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">I am an ambitious workaholic, but apart from that, pretty simple person. Understanding who you are and what you want is my strategy for your brand. I am always figuring out ways to capture your vision, so people can get on board.</blockquote>
+                <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</blockquote>
                 <h4 class="h5 g-mb-0">— Daniel Ramirez</h4>
                 <span class="d-block g-color-gray-dark-v4">Designer</span>
               </div>
@@ -603,7 +603,7 @@ web.Sections.add("demo/img-text", {
       <em class="g-color-gray-light-v5 g-font-size-120 g-pos-abs g-top-minus-40 g-left-minus-15 g-z-index-minus-1">
           “
         </em>
-      <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">I am an ambitious workaholic, but apart from that, pretty simple person. Understanding who you are and what you want is my strategy for your brand. I am always figuring out ways to capture your vision, so people can get on board.</blockquote>
+      <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</blockquote>
       <h4 class="h5 g-mb-0">— Sara Anderson</h4>
       <span class="d-block g-color-gray-dark-v4">Developer</span>
     </div>
@@ -626,7 +626,7 @@ web.Sections.add("demo/abt", {
             <div class="text-center">
               <h2 class="h3 g-color-black text-uppercase mb-2">What people say About Us?</h2>
               <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
-              <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+              <p class="lead mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
             </div>
             <!-- End Heading -->
           </div>
@@ -640,7 +640,7 @@ web.Sections.add("demo/abt", {
                 <img class="g-width-70 g-height-70 rounded-circle" src="../../../backend/admin/media/img-temp/img15.jpg" alt="Image description">
               </div>
               <div class="media-body">
-                <blockquote class="lead g-mb-15">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great.</blockquote>
+                <blockquote class="lead g-mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</blockquote>
                 <h4 class="h6 g-font-weight-700 g-mb-0">Emma Smith</h4>
                 <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-13">Customer</em>
               </div>
@@ -649,20 +649,33 @@ web.Sections.add("demo/abt", {
           </div>
 
           <div class="col-lg-6 g-mb-30">
+          <!-- Testimonials -->
+          <div class="media g-brd-bottom g-brd-3 g-brd-gray-light-v4 g-brd-primary--hover g-bg-white g-rounded-4 g-transition-0_3 g-pa-20">
+            <div class="d-flex mr-4">
+              <img class="g-width-70 g-height-70 rounded-circle" src="../../../backend/admin/media/img-temp/img15.jpg" alt="Image description">
+            </div>
+            <div class="media-body">
+              <blockquote class="lead g-mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</blockquote>
+              <h4 class="h6 g-font-weight-700 g-mb-0">Tony Hr.</h4>
+              <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-13">Customer</em>
+            </div>
+          </div>
+          <!-- End Testimonials -->
+        </div>
+        <div class="col-lg-6 g-mb-30">
             <!-- Testimonials -->
             <div class="media g-brd-bottom g-brd-3 g-brd-gray-light-v4 g-brd-primary--hover g-bg-white g-rounded-4 g-transition-0_3 g-pa-20">
               <div class="d-flex mr-4">
                 <img class="g-width-70 g-height-70 rounded-circle" src="../../../backend/admin/media/img-temp/img15.jpg" alt="Image description">
               </div>
               <div class="media-body">
-                <blockquote class="lead g-mb-15">Dear Htmlstream team, I just bought the template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
-                <h4 class="h6 g-font-weight-700 g-mb-0">Anna Pretty</h4>
+                <blockquote class="lead g-mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</blockquote>
+                <h4 class="h6 g-font-weight-700 g-mb-0">Mark Jones</h4>
                 <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-13">Customer</em>
               </div>
             </div>
             <!-- End Testimonials -->
           </div>
-
           <div class="col-lg-6 g-mb-30">
             <!-- Testimonials -->
             <div class="media g-brd-bottom g-brd-3 g-brd-gray-light-v4 g-brd-primary--hover g-bg-white g-rounded-4 g-transition-0_3 g-pa-20">
@@ -670,23 +683,8 @@ web.Sections.add("demo/abt", {
                 <img class="g-width-70 g-height-70 rounded-circle" src="../../../backend/admin/media/img-temp/img15.jpg" alt="Image description">
               </div>
               <div class="media-body">
-                <blockquote class="lead g-mb-15">Hi there purchased a couple of days ago and the site looks great, big thanks to the htmlstream guys, they gave me some great.</blockquote>
-                <h4 class="h6 g-font-weight-700 g-mb-0">Danilla Ut.</h4>
-                <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-13">Customer</em>
-              </div>
-            </div>
-            <!-- End Testimonials -->
-          </div>
-
-          <div class="col-lg-6 g-mb-30">
-            <!-- Testimonials -->
-            <div class="media g-brd-bottom g-brd-3 g-brd-gray-light-v4 g-brd-primary--hover g-bg-white g-rounded-4 g-transition-0_3 g-pa-20">
-              <div class="d-flex mr-4">
-                <img class="g-width-70 g-height-70 rounded-circle" src="../../../backend/admin/media/img-temp/img15.jpg" alt="Image description">
-              </div>
-              <div class="media-body">
-                <blockquote class="lead g-mb-15">Dear Htmlstream team, I just bought the template some weeks ago. The template is really nice and offers quite a large set of options.</blockquote>
-                <h4 class="h6 g-font-weight-700 g-mb-0">Alex Pottorf</h4>
+                <blockquote class="lead g-mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</blockquote>
+                <h4 class="h6 g-font-weight-700 g-mb-0">Emma Smith</h4>
                 <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-13">Customer</em>
               </div>
             </div>
@@ -713,25 +711,25 @@ web.Sections.add("demo/im2col", {
       </div>
       <div class="col-lg-6">
         <div class="mb-5">
-          <p class="g-mb-30">As creatives, it's important that we strive to do work outside of obligation. This lets us stay ahead of the curve for our clients and internal projects.</p>
+          <p class="g-mb-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
           <div class="row">
             <div class="col-sm-6">
               <ul class="list-unstyled g-font-size-13 mb-0">
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  Jacks of all. Experts in all.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  It's good to virtually meet you.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  A crew of creative doers.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  Let's create something great.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
               </ul>
             </div>
@@ -740,19 +738,19 @@ web.Sections.add("demo/im2col", {
               <ul class="list-unstyled g-font-size-13 mb-0">
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  We're accepting projects today.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  Finding your perfect plan.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  Examples of branding projects.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
                 <li class="d-flex mb-3">
                   <i class="g-color-primary g-mt-5 g-mr-10 icon-check"></i>
-                  Your brand has a story to tell.
+                  Lorem Ipsum is simply dummy text of the printing.
                 </li>
               </ul>
             </div>
@@ -796,14 +794,11 @@ web.Sections.add("demo/2ct", {
       <div class="container g-pt-100 g-pb-70">
         <div class="row">
           <div class="col-md-6 g-mb-30">
-            <p class="lead">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels. We get it, you're busy and it's important that someone keeps up with marketing and
-              driving people to your brand. We've got you covered. Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. Now that your brand is all
-              dressed up and ready to party.</p>
+            <p class="lead">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           </div>
 
           <div class="col-md-6 g-mb-30">
-            <p class="lead">Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion. We get it, you're busy and it's important that someone keeps up with marketing
-              and driving people to your brand. We've got you covered. This is where we sit down, grab a cup of coffee and dial in the details.</p>
+            <p class="lead">NLorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           </div>
         </div>
       </div>
@@ -825,11 +820,10 @@ web.Sections.add("demo/3card", {
       <div class="col-lg-4 g-py-100 g-px-40--sm">
         <!-- Icon Blocks -->
         <div class="text-center">
-          <span class="u-icon-v2 g-color-white g-bg-primary rounded-circle mb-4">
-            <i class="icon-education-087 u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-black text-uppercase mb-3">Creative ideas</h3>
-          <p class="g-color-gray-dark-v4">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+      </div>
+        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+          <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
+          <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -837,11 +831,9 @@ web.Sections.add("demo/3card", {
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-py-100 g-px-40--sm">
         <!-- Icon Blocks -->
         <div class="text-center">
-          <span class="u-icon-v2 g-color-white g-bg-primary rounded-circle mb-4">
-            <i class="icon-education-035 u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-black text-uppercase mb-3">Excellent features</h3>
-          <p class="g-color-gray-dark-v4">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+          <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
+          <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -849,11 +841,9 @@ web.Sections.add("demo/3card", {
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-py-100 g-px-40--sm">
         <!-- Icon Blocks -->
         <div class="text-center">
-          <span class="u-icon-v2 g-color-white g-bg-primary rounded-circle mb-4">
-            <i class="icon-education-141 u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-black text-uppercase mb-3">Fully responsive</h3>
-          <p class="g-color-gray-dark-v4">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+          <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
+          <p class="g-color-gray-dark-v4"Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -879,7 +869,7 @@ web.Sections.add("demo/faq", {
         <div class="text-center g-mb-60">
           <h2 class="mb-2">Frequently Asked Questions</h2>
           <div class="d-inline-block g-width-35 g-height-1 g-bg-gray-dark-v5 mb-2"></div>
-          <p>We aim high at being focused on building relationships with our clients and community.</p>
+          <p>WLorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <!-- End Heading -->
 
@@ -891,17 +881,18 @@ web.Sections.add("demo/faq", {
                   <a class="collapsed d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20" href="#accordion-body-01" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-01">
                     Guarantee?
                     <span class="u-accordion__control-icon g-color-primary">
-                      <i class="fa fa-angle-down"></i>
-                      <i class="fa fa-angle-up"></i>
+                                       
+                      
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="14" height="14" color="#f9fcf8" fill="#18d115"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="14" height="14" fill="#30ee17"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg>
                     </span>
                   </a>
                 </h5>
             </div>
             <div id="accordion-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-01" data-parent="#accordion">
               <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
               </div>
             </div>
           </div>
@@ -922,9 +913,9 @@ web.Sections.add("demo/faq", {
             </div>
             <div id="accordion-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-02" data-parent="#accordion">
               <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
               </div>
             </div>
           </div>
@@ -945,9 +936,9 @@ web.Sections.add("demo/faq", {
             </div>
             <div id="accordion-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-03" data-parent="#accordion">
               <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
               </div>
             </div>
           </div>
@@ -968,9 +959,9 @@ web.Sections.add("demo/faq", {
             </div>
             <div id="accordion-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-04" data-parent="#accordion">
               <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
+              Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.
               </div>
             </div>
           </div>
@@ -996,20 +987,20 @@ web.Sections.add("demo/creative", {
       <div class="row">
         <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
           <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
-            <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">We Are Creative Agency</h2>
+            <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Lorem Ipsum is simply dummy text /h2>
           </div>
 
           <div class="g-font-size-18 g-line-height-2 g-mb-30">
-            <p>Web
-              <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a
-              <strong>successful</strong> business on web and mobile.</p>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <p>
+               Lorem Ipsum is simply dummy text of the printing.
+              <strong>successful</strong> Lorem Ipsum is simply dummy text of the printing..</p>
+            <p>Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           </div>
 
           <a href="#" class="btn u-btn-primary u-shadow-v21 g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
             <i class="icon-layers g-pos-rel g-top-1 g-mr-5"></i> Buy Full Version
           </a>
-          <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Exclusive item on Wrapboostrap Marketpalce</small>
+          <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Lorem Ipsum is simply dummy text of the printing.</small>
         </div>
 
         <div class="col-md-6 align-self-center text-center g-overflow-hidden">
@@ -1040,20 +1031,19 @@ web.Sections.add("demo/digital", {
 
       <div class="col-md-6 align-self-center">
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
-          <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Key Digital Services</h2>
+          <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Lorem Ipsum is simply dummy text of the printing.</h2>
         </div>
 
         <div class="g-font-size-18 g-line-height-2 g-mb-30">
           <p>Web
-            <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a
-            <strong>successful</strong> business on web and mobile.</p>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <strong>creative</strong> Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
 
         <a href="#" class="btn u-btn-primary u-shadow-v21 g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
           <i class="icon-pie-chart g-pos-rel g-top-1 g-mr-5"></i> Buy Full Version
         </a>
-        <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Exclusive item on Wrapboostrap Marketpalce</small>
+        <small class="d-block d-sm-inline-block g-color-gray-dark-v5 g-font-size-12">*Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</small>
       </div>
     </div>
   </div>
@@ -1077,7 +1067,7 @@ web.Sections.add("demo/team", {
       <div class="text-center">
         <h2 class="h3 g-color-black text-uppercase mb-2">Meet your creative team</h2>
         <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
-        <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+        <p class="lead mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
       </div>
       <!-- End Heading -->
     </div>
@@ -1276,23 +1266,22 @@ web.Sections.add("demo/3colcard", {
       <div class="col-lg-4 g-px-40 g-mb-50 g-mb-0--lg">
         <!-- Icon Blocks -->
         <div class="text-center">
-          <span class="d-inline-block u-icon-v3 u-icon-size--xl g-bg-primary g-color-white rounded-circle g-mb-30">
-              <i class="icon-finance-086 u-line-icon-pro"></i>
-            </span>
+          
+          <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+           
           <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Invest To Us</h3>
-          <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+          <p class="mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing..</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
 
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-px-40 g-mb-50 g-mb-0--lg">
         <!-- Icon Blocks -->
-        <div class="text-center">
-          <span class="d-inline-block u-icon-v3 u-icon-size--xl g-bg-primary g-color-white rounded-circle g-mb-30">
-              <i class="icon-finance-196 u-line-icon-pro"></i>
-            </span>
+        <div class="text-center">          
+          <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+           
           <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Increase Income</h3>
-          <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+          <p class="mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -1300,11 +1289,11 @@ web.Sections.add("demo/3colcard", {
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-px-40">
         <!-- Icon Blocks -->
         <div class="text-center">
-          <span class="d-inline-block u-icon-v3 u-icon-size--xl g-bg-primary g-color-white rounded-circle g-mb-30">
-              <i class="icon-finance-147 u-line-icon-pro"></i>
-            </span>
+         
+          <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+         
           <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Collect Cash</h3>
-          <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+          <p class="mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <!-- End Icon Blocks -->
       </div>
@@ -1335,25 +1324,22 @@ web.Sections.add("demo/abtco", {
 
         <ul class="list-unstyled g-color-gray-dark-v4 mb-0">
           <li class="d-flex g-mb-10">
-            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Included Over 2000+ UI Components
+            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Lorem Ipsum is simply dummy text of the printing.
           </li>
           <li class="d-flex g-mb-10">
-            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Beautiful Eye Catching Demos
+            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i>Lorem Ipsum is simply dummy text of the printing.
           </li>
           <li class="d-flex g-mb-10">
-            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Over 30+ Beautiful Thematic Examples
+            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Lorem Ipsum is simply dummy text of the printing.
           </li>
           <li class="d-flex g-mb-10">
-            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Semantic HTML5/CSS3 Codes
+            <i class="icon-check g-color-primary g-mt-5 g-mr-10"></i> Lorem Ipsum is simply dummy text of the printing.
           </li>
         </ul>
       </div>
 
-      <div class="col-lg-6 g-bg-img-hero g-pos-rel" style="background-image: url(../../assets/img/maps/map3.png);">
-        <div class="g-absolute-centered text-center w-100 g-px-40">
-          <h2 class="h1 g-color-gray-light-v2 g-font-weight-600 g-letter-spacing-0_5">Development is
-              <span class="u-text-animation u-text-animation--typing">an </span><span class="typed-cursor">|</span></h2>
-        </div>
+      <div class="col-lg-6 g-bg-img-hero g-pos-rel" style="background-image: url(../../..//backend/admin/media/img-temp/world-map.jpg);">
+        
       </div>
     </div>
   </div>
@@ -1376,7 +1362,7 @@ web.Sections.add("demo/ln", {
     <div class="col-lg-9">
       <h2 class="h2 g-color-black g-font-weight-600 mb-2">Follow the Latest News</h2>
       <div class="d-inline-block g-width-30 g-height-2 g-bg-primary mb-2"></div>
-      <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+      <p class="lead mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
     </div>
   </div>
   <!-- End Heading -->
@@ -1391,7 +1377,7 @@ web.Sections.add("demo/ln", {
           <h2 class="h5 g-color-black g-font-weight-600 mb-3">
               <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="#">Announcing a free plan for small teams</a>
             </h2>
-          <p class="g-color-gray-dark-v4 g-line-height-1_8">At Wake, our mission has always been focused on bringing openness and transparency.</p>
+          <p class="g-color-gray-dark-v4 g-line-height-1_8">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-13" href="#">Read more...</a>
         </div>
       </article>
@@ -1421,9 +1407,9 @@ web.Sections.add("demo/ln", {
         <div class="g-width-80x g-bg-white g-pos-rel g-z-index-1 g-pa-30 g-mt-minus-50 mx-auto">
           <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">31 May 2017</span>
           <h2 class="h5 g-color-black g-font-weight-600 mb-3">
-              <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="#">A UX strategy for the Ultimate Product Launch</a>
+              <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="#">Lorem Ipsum is simply dummy text of the printing.</a>
             </h2>
-          <p class="g-color-gray-dark-v4 g-line-height-1_8">In an attempt to answer those questions, I poured over the biggest collections of design.</p>
+          <p class="g-color-gray-dark-v4 g-line-height-1_8">Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-13" href="#">Read more...</a>
         </div>
       </article>
@@ -1452,8 +1438,8 @@ web.Sections.add("demo/abtgood", {
         <div class="mb-5">
           <h2 class="h1 g-color-black g-font-weight-600 g-mb-35"><span class="g-color-primary">What</span> We<br>are
               <span class="g-color-primary">Good</span> at</h2>
-          <p>We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
-          <p>As creatives, it's important that we strive to do work outside of obligation. This lets us stay ahead of the curve for our clients and internal projects.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <a class="btn u-btn-primary g-font-size-default text-uppercase g-rounded-50 g-py-12 g-px-30" href="#">Purchase Now</a>
       </div>
@@ -1481,18 +1467,16 @@ web.Sections.add("demo/services", {
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
         <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">Our Services</h2>
       </div>
-      <p class="lead">Web <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
+      <p class="lead"> Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.<strong>successful</strong> Lorem Ipsum is simply dummy text of the printing.</p>
     </header>
 
     <div class="row">
       <div class="col-lg-4 g-mb-60 g-mb-0--lg">
         <!-- Icon Blocks -->
         <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
-          <span class="u-icon-v3 u-icon-size--lg g-color-white g-bg-primary g-pull-50x-up rounded-circle">
-              <i class="icon-finance-167 u-line-icon-pro"></i>
-            </span>
+        <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
           <h3 class="h4 g-color-gray-dark-v2 g-mb-10">More Income</h3>
-          <p class="g-mb-15">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+          <p class="g-mb-15">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-12 text-uppercase g-font-weight-600" href="#">Read More</a>
         </div>
         <!-- End Icon Blocks -->
@@ -1501,11 +1485,9 @@ web.Sections.add("demo/services", {
       <div class="col-lg-4 g-mb-60 g-mb-0--lg">
         <!-- Icon Blocks -->
         <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
-          <span class="u-icon-v3 u-icon-size--lg g-color-white g-bg-primary g-pull-50x-up rounded-circle">
-              <i class="icon-finance-128 u-line-icon-pro"></i>
-            </span>
+        <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
           <h3 class="h4 g-color-gray-dark-v2 g-mb-10">Instant Cash</h3>
-          <p class="g-mb-15">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+          <p class="g-mb-15">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-12 text-uppercase g-font-weight-600" href="#">Read More</a>
         </div>
         <!-- End Icon Blocks -->
@@ -1514,11 +1496,9 @@ web.Sections.add("demo/services", {
       <div class="col-lg-4">
         <!-- Icon Blocks -->
         <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
-          <span class="u-icon-v3 u-icon-size--lg g-color-white g-bg-primary g-pull-50x-up rounded-circle">
-              <i class="icon-finance-218 u-line-icon-pro"></i>
-            </span>
+        <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
           <h3 class="h4 g-color-gray-dark-v2 g-mb-10">Friendly Support</h3>
-          <p class="g-mb-15">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+          <p class="g-mb-15">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-12 text-uppercase g-font-weight-600" href="#">Read More</a>
         </div>
         <!-- End Icon Blocks -->
@@ -1543,8 +1523,7 @@ web.Sections.add("demo/webban", {
         <h2 class="h1 g-color-black g-font-weight-700 text-uppercase">Web Template</h2>
       </div>
 
-      <p class="lead">As creatives, it's important that we strive to do work outside of obligation. This lets us stay ahead of the curve for our clients and internal projects. We strive to embrace and drive change in our industry which allows us to keep our clients
-        relevant and ready to adapt.</p>
+      <p class="lead">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing..</p>
       <p class="lead">Working together on the daily requires each individual to let the greater good of the team's work surface above their own ego.</p>
     </div>
 
@@ -1570,7 +1549,7 @@ web.Sections.add("demo/serlist", {
     <div class="col-lg-9">
       <h2 class="h3 g-color-black g-font-weight-600 text-uppercase mb-2">Our Services</h2>
       <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
-      <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+      <p class="lead mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
     </div>
   </div>
   <!-- End Heading -->
@@ -1579,19 +1558,17 @@ web.Sections.add("demo/serlist", {
     <div class="col-md-4 g-mb-30">
       <!-- Icon Blocks -->
       <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-        <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-          <i class="icon-education-087 u-line-icon-pro"></i>
-        </span>
-        <h3 class="h5 g-color-black g-mb-10">Web Design &amp; Development</h3>
-        <p class="g-color-gray-dark-v4">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+      <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <h3 class="h5 g-color-black g-mb-10">Lorem Ipsum </h3>
+        <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Responsive Web Desgin</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">E-commerce</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">App &amp; Icon Design</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Logo &amp; Brand Design</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Mobile Development</li>
-          <li class="g-py-8">UI/UX Design</li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply dummy text of the printing.</li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-py-8">Lorem Ipsum</li>
         </ul>
       </div>
       <!-- End Icon Blocks -->
@@ -1599,18 +1576,16 @@ web.Sections.add("demo/serlist", {
     <div class="col-md-4 g-mb-30">
       <!-- Icon Blocks -->
       <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-        <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-          <i class="icon-finance-009 u-line-icon-pro"></i>
-        </span>
-        <h3 class="h5 g-color-black g-mb-10">Marketing &amp; Cunsulting</h3>
-        <p class="g-color-gray-dark-v4">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+      <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <h3 class="h5 g-color-black g-mb-10">Lorem Ipsum </h3>
+        <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Analysis &amp; Consulting</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Email Marketing</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">App &amp; Icon Design</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Responsive Web Desgin</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Social Networking</li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum /li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply dummy text</li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply</li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
           <li class="g-py-8">Documentation</li>
         </ul>
       </div>
@@ -1619,19 +1594,17 @@ web.Sections.add("demo/serlist", {
     <div class="col-md-4 g-mb-30">
       <!-- Icon Blocks -->
       <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-        <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-          <i class="icon-finance-256 u-line-icon-pro"></i>
-        </span>
-        <h3 class="h5 g-color-black g-mb-10">SEO &amp; Advertising</h3>
-        <p class="g-color-gray-dark-v4">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+      <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <h3 class="h5 g-color-black g-mb-10">Lorem Ipsum  </h3>
+        <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Display Advertising</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">App &amp; Icon Design</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Analysis &amp; Consulting</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Google AdSense</li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Social Media</li>
-          <li class="g-py-8">Google/Bing Analysis</li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply dummy </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
+          <li class="g-py-8">Lorem Ipsum </li>
         </ul>
       </div>
       <!-- End Icon Blocks -->
@@ -1655,7 +1628,7 @@ web.Sections.add("demo/perfect", {
       <div class="text-center g-pa-15x">
         <div class="mb-5">
           <h3 class="h1 g-color-black mb-4">The Perfect Idea</h3>
-          <p class="g-color-gray-dark-v4 g-font-size-16">Understanding who you are and what you want is our strategy for your brand. We are always figuring out ways to capture your vision, so people can get on board.</p>
+          <p class="g-color-gray-dark-v4 g-font-size-16">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
         <a class="btn u-btn-outline-primary g-font-weight-600 g-rounded-50 g-px-30 g-py-13" href="#">See more
             <i class="ml-2 fa fa-long-arrow-right"></i></a>
@@ -1692,7 +1665,7 @@ web.Sections.add("demo/gold", {
         <div class="text-center g-pa-15x">
           <div class="mb-5">
             <h3 class="h1 g-color-black mb-4">Goldrush</h3>
-            <p class="g-color-gray-dark-v4 g-font-size-16">Understanding who you are and what you want is our strategy for your brand. We are always figuring out ways to capture your vision, so people can get on board.</p>
+            <p class="g-color-gray-dark-v4 g-font-size-16">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           </div>
           <a class="btn u-btn-outline-primary g-font-weight-600 g-rounded-50 g-px-30 g-py-13" href="#">See more
               <i class="fa-long-arrow-right"></i></a>
