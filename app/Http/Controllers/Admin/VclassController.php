@@ -67,7 +67,10 @@ class VclassController extends Controller
         $images = array();
         foreach ($request->file('images') as $image) {
             array_push($images, imageUpload($image, 'backend/admin/images/vclass_management/vclass'));
-            $imag = $image;
+           
+        }
+        if(!empty($images[0])){
+            $imag = $images[0];
         }
         $vclass->images = $images;
 		if(!empty($request->file('banner'))){
@@ -152,13 +155,14 @@ class VclassController extends Controller
 
 					
                     if ($imag && $result['data']['id']) {
-                        $field1['image_file'] = $imag;
+                        $field1['is_thumbnail'] = true;
+                        $field1['image_url'] = $imag;
                         $dataa1 = json_encode($field1);
 
                         $curl = curl_init();
 
                         curl_setopt_array($curl, [
-                            CURLOPT_URL => " https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/".$result['data']['id']. "/images",
+                            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/".$result['data']['id']. "/images",
                             CURLOPT_RETURNTRANSFER => true,
                             CURLOPT_ENCODING => "",
                             CURLOPT_MAXREDIRS => 10,
@@ -185,7 +189,7 @@ class VclassController extends Controller
                         } else {
                             $result1 = json_decode($response1, true);
 							if(!empty($result1['data']['id'])){
-                            	$vclassType->bigcommerce_image_id = $result1['data']['id'];
+                          //  	$vclassType->bigcommerce_image_id = $result1['data']['id'];
 							}
                         }
                     }

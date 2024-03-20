@@ -75,6 +75,9 @@ class LodgingRentalController extends Controller
             array_push($images, imageUpload($image, 'backend/admin/images/lodging_rental/vclasss/'));
             $imag = $image; 
         }
+        if(!empty($images[0])){
+            $imag = $images[0];
+        }
         $vclass->images = $images;
         $vclass->state_id = $request->state_id;
         $vclass->location = $request->location;
@@ -137,7 +140,8 @@ class LodgingRentalController extends Controller
 
                 
                 if ($imag && $result['data']['id']) {
-                    $field1['image_file'] = $imag;
+                    $field1['is_thumbnail'] = true;
+                    $field1['image_url'] = $imag;
                     $dataa1 = json_encode($field1);
 
                     $curl = curl_init();

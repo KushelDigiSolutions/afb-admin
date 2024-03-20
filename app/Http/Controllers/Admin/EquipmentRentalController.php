@@ -67,6 +67,9 @@ class EquipmentRentalController extends Controller
             array_push($images, imageUpload($image, 'backend/admin/images/equipment_management/equipments'));
             $imag = $image;
         }
+        if(!empty($images[0])){
+            $imag = $images[0];
+        }
         $equipment->images = $images;
         $equipment->terms = $request->terms;
         $equipment->start_date = $request->start_date;
@@ -136,7 +139,8 @@ class EquipmentRentalController extends Controller
                 $vclassType->bigcommerce_id = $result['data']['id'];
                 if ($result['data']['id']) {
                     if ($imag && $vclassType->bigcommerce_id) {
-                        $field1['image_file'] = $imag;
+                        $field1['is_thumbnail'] = true;
+                        $field1['image_url'] = $imag;
                         $dataa1 = json_encode($field1);
 
                         $curl = curl_init();
