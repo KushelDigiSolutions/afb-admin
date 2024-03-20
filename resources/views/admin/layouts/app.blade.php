@@ -48,8 +48,8 @@
                         <div
                             class="app-container container-fluid d-flex justify-content-center flex-column flex-md-row flex-center flex-md-stack py-3">
                             <div class="text-dark order-2 order-md-1">
-                                <span class="text-muted fw-semibold me-1">{{date('Y')}} &copy;</span>
-                                <a href="javascript:void(0);" class="text-gray-800 cursor-default">Fairchild</a>
+                                <span class="text-muted fw-semibold me-1">Copyright - &copy; {{date('Y')}} </span>
+                                <a href="javascript:void(0);" class="text-gray-800 cursor-default">MadFish Solutions</a>
                             </div>
                         </div>
                     </div>
