@@ -32,7 +32,8 @@
                     </ul>
                 </div>
 
-                <button>hi</button>
+                <button id="secta" class="btn btn-sm fw-bold btn-primary" data-bs-toggle="modal"
+                data-bs-target="#kt_modal_new_target">+ Create New Page</button>
 
             </div>
         </div>
