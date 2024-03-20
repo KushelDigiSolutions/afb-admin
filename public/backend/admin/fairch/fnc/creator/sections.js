@@ -1266,7 +1266,7 @@ web.Sections.add("demo/3colcard", {
         <!-- Icon Blocks -->
         <div class="text-center">
           
-          <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+          <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
            
           <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Invest To Us</h3>
           <p class="mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing..</p>
@@ -1277,7 +1277,7 @@ web.Sections.add("demo/3colcard", {
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-px-40 g-mb-50 g-mb-0--lg">
         <!-- Icon Blocks -->
         <div class="text-center">          
-          <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+          <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
            
           <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Increase Income</h3>
           <p class="mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
@@ -1289,7 +1289,7 @@ web.Sections.add("demo/3colcard", {
         <!-- Icon Blocks -->
         <div class="text-center">
          
-          <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+          <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
          
           <h3 class="h5 g-color-gray-dark-v2 g-font-weight-600 text-uppercase mb-3">Collect Cash</h3>
           <p class="mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
@@ -1473,7 +1473,7 @@ web.Sections.add("demo/services", {
       <div class="col-lg-4 g-mb-60 g-mb-0--lg">
         <!-- Icon Blocks -->
         <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
-        <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
           <h3 class="h4 g-color-gray-dark-v2 g-mb-10">More Income</h3>
           <p class="g-mb-15">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-12 text-uppercase g-font-weight-600" href="#">Read More</a>
@@ -1484,7 +1484,7 @@ web.Sections.add("demo/services", {
       <div class="col-lg-4 g-mb-60 g-mb-0--lg">
         <!-- Icon Blocks -->
         <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
-        <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
           <h3 class="h4 g-color-gray-dark-v2 g-mb-10">Instant Cash</h3>
           <p class="g-mb-15">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-12 text-uppercase g-font-weight-600" href="#">Read More</a>
@@ -1495,7 +1495,7 @@ web.Sections.add("demo/services", {
       <div class="col-lg-4">
         <!-- Icon Blocks -->
         <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
-        <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
           <h3 class="h4 g-color-gray-dark-v2 g-mb-10">Friendly Support</h3>
           <p class="g-mb-15">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
           <a class="g-font-size-12 text-uppercase g-font-weight-600" href="#">Read More</a>
@@ -1557,7 +1557,7 @@ web.Sections.add("demo/serlist", {
     <div class="col-md-4 g-mb-30">
       <!-- Icon Blocks -->
       <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-      <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+      <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
         <h3 class="h5 g-color-black g-mb-10">Lorem Ipsum </h3>
         <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
@@ -1575,7 +1575,7 @@ web.Sections.add("demo/serlist", {
     <div class="col-md-4 g-mb-30">
       <!-- Icon Blocks -->
       <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-      <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+      <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
         <h3 class="h5 g-color-black g-mb-10">Lorem Ipsum </h3>
         <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
@@ -1593,7 +1593,7 @@ web.Sections.add("demo/serlist", {
     <div class="col-md-4 g-mb-30">
       <!-- Icon Blocks -->
       <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-      <img src="../../..//backend/admin/media/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+      <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
         <h3 class="h5 g-color-black g-mb-10">Lorem Ipsum  </h3>
         <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
