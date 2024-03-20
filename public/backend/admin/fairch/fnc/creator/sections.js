@@ -1,6 +1,6 @@
 web.SectionsGroup["STANDARD SECTIONS"] = ["Slider/Slider-3","hero/centered-section","hero/center-aligned-with-image","hero/left-aligned-with-image", 
 "hero/right-aligned-with-image","hero/border-with-cropped-image","bootstrap4/photo-gallery","bootstrap4/one-column", "bootstrap4/two-column-section", 
-"bootstrap4/three-column-section", "Ads/slideAds", "demo/text-img","demo/img-text","demo/abt", "demo/im2col","demo/Quote","demo/2ct","demo/3card", 
+"bootstrap4/three-column-section", "Ads/slideAds", "demo/text-img","demo/img-text","demo/abt", "demo/im2col","demo/Quote","demo/2ct","demo/3card","demo/faq", 
 "demo/creative","demo/digital","demo/team","demo/3colcard","demo/abtco","demo/ln", "demo/services","demo/abtgood", "demo/webban","demo/serlist", 
 "demo/perfect", "demo/gold"];
 
@@ -817,16 +817,15 @@ web.Sections.add("demo/3card", {
   <section class="g-bg-gray-light-v5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 g-py-100 g-px-40--sm">
-        <!-- Icon Blocks -->
-        <div class="text-center">
-      </div>
-        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
-          <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
-          <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
-        </div>
-        <!-- End Icon Blocks -->
-      </div>
+    <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-py-100 g-px-40--sm">
+    <!-- Icon Blocks -->
+    <div class="text-center">
+    <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+      <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
+      <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
+    </div>
+    <!-- End Icon Blocks -->
+  </div>
 
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-py-100 g-px-40--sm">
         <!-- Icon Blocks -->
@@ -839,14 +838,14 @@ web.Sections.add("demo/3card", {
       </div>
 
       <div class="col-lg-4 g-brd-left--lg g-brd-gray-light-v4 g-py-100 g-px-40--sm">
-        <!-- Icon Blocks -->
-        <div class="text-center">
-        <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
-          <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
-          <p class="g-color-gray-dark-v4"Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
-        </div>
-        <!-- End Icon Blocks -->
+      <!-- Icon Blocks -->
+      <div class="text-center">
+      <img src="../../../backend/admin/media/img-temp/50x50.jpg" class="mw-00 align-center" style="border-radius: 56px;">
+        <h3 class="h5 g-color-black text-uppercase mb-3">Lorem Ipsum</h3>
+        <p class="g-color-gray-dark-v4">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
       </div>
+      <!-- End Icon Blocks -->
+    </div>
     </div>
   </div>
 </section>
@@ -987,7 +986,7 @@ web.Sections.add("demo/creative", {
       <div class="row">
         <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
           <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
-            <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Lorem Ipsum is simply dummy text /h2>
+            <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Lorem Ipsum is simply dummy text</h2>
           </div>
 
           <div class="g-font-size-18 g-line-height-2 g-mb-30">
@@ -1065,7 +1064,7 @@ web.Sections.add("demo/team", {
     <div class="col-lg-7">
       <!-- Heading -->
       <div class="text-center">
-        <h2 class="h3 g-color-black text-uppercase mb-2">Meet your creative team</h2>
+        <h2 class="h3 g-color-black text-uppercase mb-2">Lorem Ipsum</h2>
         <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
         <p class="lead mb-0">Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.Lorem Ipsum is simply dummy text of the printing.</p>
       </div>
@@ -1582,7 +1581,7 @@ web.Sections.add("demo/serlist", {
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
           <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply </li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum /li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
           <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply dummy text</li>
           <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum is simply</li>
           <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lorem Ipsum </li>
