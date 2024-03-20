@@ -1,5 +1,5 @@
 web.ComponentsGroup['COMPONENTS'] =
-["elements/accordion", "html/alert","html/audio",
+[/*"elements/accordion",*/ "html/alert","html/audio",
 "html/badge", "html/blockquote", "html/breadcrumbs","html/btn", "html/btn-link","html/button","html/buttongroup", "html/buttontoolbar", 
 "elements/code","html/container",
  "html/card","html/checkbox","html/creategrid",
