@@ -96,7 +96,7 @@ class LodgingRentalController extends Controller
         $vclass->seo_description = $request->seo_description;
 
         if ($vclass->save()) {
-            $field['name'] = $request->title."rs";
+            $field['name'] = $request->title;
             $field['type'] = "physical";
             $field['weight'] = 1;
             $field['price'] = (int) $request->price;
@@ -137,7 +137,16 @@ class LodgingRentalController extends Controller
             if ($result['data']['id']) {
 					
                 Lodging::where('id',$vclass->id)->update(['bigcommerce_id'=>$result['data']['id']]);
+                
 
+                if($result['data']['id']){
+                    $this->__createModifier("Check-in",$result['data']['id']);
+                    $this->__createModifier("Checkout",$result['data']['id']);
+                    $this->__createModifier("Adults",$result['data']['id']);
+                    $this->__createModifier("Children",$result['data']['id']);
+                    $this->__createModifier("Infants",$result['data']['id']);
+                    $this->__assignChannel($result['data']['id']);
+                }
                 
                 if ($imag && $result['data']['id']) {
                     $field1['is_thumbnail'] = true;
@@ -298,6 +307,17 @@ class LodgingRentalController extends Controller
                     }
 
                     $vclassType->bigcommerce_id = $result['data']['id'];
+
+
+                    if($vclassType->bigcommerce_id){
+                        $this->__createModifier("Check-in",$vclassType->bigcommerce_id);
+                        $this->__createModifier("Checkout",$vclassType->bigcommerce_id);
+                        $this->__createModifier("Adults",$vclassType->bigcommerce_id);
+                        $this->__createModifier("Children",$vclassType->bigcommerce_id);
+                        $this->__createModifier("Infants",$vclassType->bigcommerce_id);
+                        $this->__assignChannel($vclassType->bigcommerce_id);
+                    }
+
                     if ($imag && $vclassType->bigcommerce_id) {
                         $field1['image_file'] = $imag;
                         $dataa1 = json_encode($field1);
@@ -419,6 +439,59 @@ class LodgingRentalController extends Controller
         }
 
         return redirect()->route('admin.lodging.index')->with('success', 'Vclass Updated Successfully!');
+    }
+
+    private function __assignChannel($productId){
+
+        $field1[0]['product_id'] = $productId;
+        $field1[0]['channel_id'] = 1;
+        $data = json_encode($field1);
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/channel-assignments",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "PUT",
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_HTTPHEADER => [
+                "Accept: application/json",
+                "Content-Type: application/json",
+                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+            ],
+        ]);
+        $response1 = curl_exec($curl);
+        $err = curl_error($curl);
+    }
+
+    private function __createModifier($modifier,$productId){
+
+        $field1['type'] = "text";
+        $field1['required'] = true;
+        $field1['display_name'] = $modifier;
+        $data = json_encode($field1);
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $productId. "/modifiers",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_HTTPHEADER => [
+                "Accept: application/json",
+                "Content-Type: application/json",
+                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+            ],
+        ]);
+        $response1 = curl_exec($curl);
+        $err = curl_error($curl);
     }
 
     public function destroy(Lodging $lodging)
