@@ -65,9 +65,10 @@ class EventController extends Controller
         $event->description = $request->description;
         $imag = null;
         $images = array();
+        if(!empty($request->file('images'))){
         foreach ($request->file('images') as $image) {
             array_push($images, imageUpload($image, 'backend/admin/images/event_management/events'));
-        }
+        }}
         if(!empty($images[0])){
             $imag = $images[0];
         }
