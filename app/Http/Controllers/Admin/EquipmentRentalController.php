@@ -137,6 +137,14 @@ class EquipmentRentalController extends Controller
                     $result = json_decode($response, true);
                 }
                 $vclassType->bigcommerce_id = $result['data']['id'];
+
+                if($vclassType->bigcommerce_id){
+                    $this->__createModifier("Start Date",$vclassType->bigcommerce_id);
+                    $this->__createModifier("End Date",$vclassType->bigcommerce_id);
+                    $this->__assignChannel($vclassType->bigcommerce_id);
+                }
+
+
                 if ($result['data']['id']) {
                     if ($imag && $vclassType->bigcommerce_id) {
                         $field1['is_thumbnail'] = true;
@@ -184,6 +192,58 @@ class EquipmentRentalController extends Controller
         }
 
         return redirect()->route('admin.equipment.index')->with('success', 'Equipment Added Successfully!');
+    }
+
+    private function __assignChannel($productId){
+
+        $field1[0]['product_id'] = $productId;
+        $field1[0]['channel_id'] = 1;
+        $data = json_encode($modifier);
+
+        curl_setopt_array($curl, [
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/channel-assignments",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "PUT",
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_HTTPHEADER => [
+                "Accept: application/json",
+                "Content-Type: application/json",
+                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+            ],
+        ]);
+        $response1 = curl_exec($curl);
+        $err = curl_error($curl);
+    }
+    private function __createModifier($modifier,$productId){
+
+        $field1['type'] = "text";
+        $field1['required'] = true;
+        $field1['display_name'] = $imag;
+        $data = json_encode($modifier);
+
+        curl_setopt_array($curl, [
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $productId. "/modifiers",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_HTTPHEADER => [
+                "Accept: application/json",
+                "Content-Type: application/json",
+                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+            ],
+        ]);
+        $response1 = curl_exec($curl);
+        $err = curl_error($curl);
     }
 
     public function show(Request $request, Equipment $equipment)

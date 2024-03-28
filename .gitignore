@@ -13,6 +13,7 @@ Homestead.yaml
 /public/storage
 .phpunit.result.cache
 docker-compose.override.yml
+public
 /public/backend/admin/images/event_management/events
 /public/backend/admin/images/event_management/categories
 /public/backend/admin/images/header
