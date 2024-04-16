@@ -97,6 +97,18 @@
                                                 <div id="title-warn" class="text-warning2 none fs-7">This Class title is
                                                     already exists</div>
                                             </div>
+
+
+
+                                        <div class="mb-10 fv-row">
+                                            <label class="form-label">SKU</label>
+                                            <input type="text" name="sku" value="{{ $vclass->sku }}"
+                                                class="form-control sku_can form-control11 mb-2"
+                                                oninput="validate(this, 'sku-warn')" placeholder="SKU" required="">
+                                            <div id="sku-warn" class="text-warning2 none fs-7">This SKU is already exists</div>
+                                        </div>
+
+
                                             <div class="mb-10 fv-row">
                                                 <label class="form-label required">Description</label>
 							<textarea name="description" rows="4" id="editor" class="form-control form-control11 mb-2" placeholder="Text here">{{ $vclass->description }}</textarea>
