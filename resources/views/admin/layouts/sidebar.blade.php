@@ -528,7 +528,55 @@
                 @endcanany
 
 
-                @canany(['user-list', 'user-create', 'user-edit', 'user-status-change', 'user-delete'])
+
+                @canany(['user-list', 'user-create', 'user-edit', 'user-status-change', 'user-delete','role-list', 'role-create', 'role-edit', 'role-delete'])
+                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion @if (in_array(Route::currentRouteName(), [
+                        'admin.users.index', 'admin.users.create', 'admin.users.edit','admin.roles.index', 'admin.roles.create', 'admin.roles.edit'
+                    ])) {{ 'hover show' }} @endif">
+                        <span class="menu-link pro-hover @if (in_array(Route::currentRouteName(), [
+                            'admin.users.index', 'admin.users.create', 'admin.users.edit','admin.roles.index', 'admin.roles.create', 'admin.roles.edit',
+                            ])) {{ 'is-active' }} @endif ">
+                            <span class="menu-icon">
+                                <i class="ki-duotone ki-calendar fs-2">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                    <span class="path3"></span>
+                                </i>
+                            </span>
+                            <span class="menu-title">Admin And Role Management</span>
+                            <span class="menu-arrow"></span>
+                        </span>
+						
+                        @canany(['user-list', 'user-create', 'user-edit', 'user-status-change', 'user-delete'])
+                            <div class="menu-sub menu-sub-accordion ">
+                                <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.users.index', 'admin.users.create', 'admin.users.edit'])) {{ 'is-active' }} @endif">
+                                    <a class="menu-link" href="{{ route('admin.users.index') }}">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">User Management</span>
+                                    </a>
+                                </div>
+                            </div>
+                        @endcanany
+						@canany(['role-list', 'role-create', 'role-edit', 'role-delete'])
+                            <div class="menu-sub menu-sub-accordion ">
+                                <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.roles.index', 'admin.roles.create', 'admin.roles.edit'])) {{ 'is-active' }} @endif">
+                                    <a class="menu-link" href="{{ route('admin.roles.index') }}">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Role Management</span>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        @endcanany
+                @endcanany
+
+
+
+             <?php /*   @canany(['user-list', 'user-create', 'user-edit', 'user-status-change', 'user-delete'])
                     <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.users.index', 'admin.users.create', 'admin.users.edit'])) {{ 'is-active' }} @endif">
                         <a class="menu-link" href="{{ route('admin.users.index') }}">
                             <span class="menu-icon">
@@ -545,7 +593,7 @@
                         </a>
                     </div>
                 @endcanany
-        <?php /*        @canany(['staff-list', 'staff-create', 'staff-edit', 'staff-status-change', 'staff-delete'])
+           @canany(['staff-list', 'staff-create', 'staff-edit', 'staff-status-change', 'staff-delete'])
                     <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.staff.index', 'admin.staff.create', 'admin.staff.edit'])) {{ 'is-active' }} @endif">
                         <a class="menu-link" href="{{ route('admin.staff.index') }}">
                             <span class="menu-icon">
@@ -561,7 +609,7 @@
                             <span class="menu-title">Staff Management</span>
                         </a>
                     </div>
-                @endcanany
+                @endcanany 
                 @canany(['role-list', 'role-create', 'role-edit', 'role-delete'])
                     <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.roles.index', 'admin.roles.create', 'admin.roles.edit'])) {{ 'is-active' }} @endif">
                         <a class="menu-link" href="{{ route('admin.roles.index') }}">
@@ -578,8 +626,8 @@
                             <span class="menu-title">Role Management</span>
                         </a>
                     </div>
-                @endcanany
-				*/ ?>
+                @endcanany*/?>
+				
 				
 				
 				
