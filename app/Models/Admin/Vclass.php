@@ -12,6 +12,7 @@ class Vclass extends Model
     protected $fillable = [
         'title',
         'slug',
+        'sku',
         'short_description',
         'description',
         'images',

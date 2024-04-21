@@ -68,6 +68,7 @@ class LodgingRentalController extends Controller
         $vclass = new Lodging;
         $vclass->title = $request->title;
         $vclass->slug = Str::slug($request->title);
+        $vclass->sku = $request->sku;
         $vclass->description = $request->description;
         $imag = null;
         $images = array();
@@ -220,6 +221,7 @@ class LodgingRentalController extends Controller
     {
         $lodging->title = $request->title;
         $lodging->slug = Str::slug($request->title);
+        $lodging->sku = $request->sku;
         $lodging->description = $request->description;
         $imag = null;
         if ($request->has('images')) {

@@ -12,6 +12,7 @@ class Equipment extends Model
     protected $fillable = [
         'title',
         'slug',
+        'sku',
         'description',
         'type_description',
         'available_date',

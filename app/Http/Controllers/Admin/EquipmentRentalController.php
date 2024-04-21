@@ -60,6 +60,7 @@ class EquipmentRentalController extends Controller
         $equipment = new Equipment;
         $equipment->title = $request->title;
         $equipment->slug = Str::slug($request->title);
+        $equipment->sku = $request->sku;
         $equipment->description = $request->description;
         $imag = null;
         $images = array();
@@ -193,6 +194,7 @@ class EquipmentRentalController extends Controller
     {
         $equipment->title = $request->title;
         $equipment->slug = Str::slug($request->title);
+        $equipment->sku = $request->sku;
         $equipment->description = $request->description;
         $imag = null;
         $equipment->images = $request->oldImage;

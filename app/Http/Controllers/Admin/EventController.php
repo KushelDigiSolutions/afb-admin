@@ -61,6 +61,7 @@ class EventController extends Controller
         $event = new Event;
         $event->title = $request->title;
         $event->slug = Str::slug($request->title);
+        $event->sku = $request->sku;
         $event->short_description = $request->short_description;
         $event->description = $request->description;
         $imag = null;
@@ -217,6 +218,7 @@ class EventController extends Controller
     {
         $event->title = $request->title;
         $event->slug = Str::slug($request->title);
+        $event->sku = $request->sku;
         $event->short_description = $request->short_description;
         $event->description = $request->description;
         $imag = null;

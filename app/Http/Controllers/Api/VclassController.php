@@ -61,6 +61,7 @@ class VclassController extends Controller
         foreach ($events as $key => $event) {
             $dataArray['classes'][$key]['id'] = $event->id;
             $dataArray['classes'][$key]['title'] = $event->title;
+            $dataArray['classes'][$key]['sku'] = $event->sku;
             $dataArray['classes'][$key]['short_description'] = $event->short_description;
             $dataArray['classes'][$key]['description'] = $event->description;
             $dataArray['classes'][$key]['number_of_tickets'] = $event->number_of_tickets;
@@ -110,6 +111,7 @@ class VclassController extends Controller
 			$dataArray['classes']['bigcommerce_id'] = $event->bigcommerce_id;
 			$dataArray['classes']['title'] = $event->title;
 			$dataArray['classes']['slug'] = $event->slug;
+			$dataArray['classes']['sku'] = $event->sku;
 			$dataArray['classes']['prerequisites'] = $event->prerequisites;
 			$dataArray['classes']['description'] = $event->description;
 			$dataArray['classes']['banner'] = $banner;
@@ -187,6 +189,7 @@ class VclassController extends Controller
                     $dataArray['classes'][$key]['bigcommerce_id'] = $event->bigcommerce_id;
                     $dataArray['classes'][$key]['title'] = $event->title;
                     $dataArray['classes'][$key]['slug'] = $event->slug;
+                    $dataArray['classes'][$key]['sku'] = $event->sku;
                     $dataArray['classes'][$key]['prerequisites'] = $event->prerequisites;
                     $dataArray['classes'][$key]['description'] = $event->description;
 					if(!empty($event->banner)){

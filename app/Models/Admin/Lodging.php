@@ -12,6 +12,7 @@ class Lodging extends Model
     protected $fillable = [
         'title',
         'slug',
+        'sku',
         'description',
         'images',
         'location',

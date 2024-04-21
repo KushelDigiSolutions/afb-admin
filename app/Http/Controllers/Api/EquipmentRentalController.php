@@ -36,10 +36,10 @@ class EquipmentRentalController extends Controller
         
         if(!empty($cat)){
         $events = Equipment::where('is_delete', '0')->where('is_active', '1')->orderBy('created_at', $filter)->offset($offset)->whereJsonContains('category_ids', '' . $cat)->limit($limit)->get();
- $eventscount = Equipment::where('is_delete', '0')->whereJsonContains('category_ids', '' . $cat)->count();
+        $eventscount = Equipment::where('is_delete', '0')->whereJsonContains('category_ids', '' . $cat)->count();
     }else{
         $events = Equipment::where('is_delete', '0')->where('is_active', '1')->orderBy('created_at', $filter)->offset($offset)->limit($limit)->get();
-             $eventscount = Equipment::where('is_delete', '0')->count();
+        $eventscount = Equipment::where('is_delete', '0')->count();
     }
         
     
@@ -119,6 +119,7 @@ class EquipmentRentalController extends Controller
         foreach ($events as $key => $event) {
             $dataArray['event'][$key]['id'] = $event->id;
             $dataArray['event'][$key]['title'] = $event->title;
+            $dataArray['event'][$key]['sku'] = $event->sku;
             $dataArray['event'][$key]['short_description'] = $event->short_description;
             $dataArray['event'][$key]['description'] = $event->description;
             $dataArray['event'][$key]['number_of_tickets'] = $event->number_of_tickets;
@@ -153,6 +154,7 @@ class EquipmentRentalController extends Controller
             $dataArray['equipment']['id'] = $event->id;
             $dataArray['equipment']['bigcommerce_id'] = $event->bigcommerce_id;
             $dataArray['equipment']['title'] = $event->title;
+            $dataArray['equipment']['sku'] = $event->sku;
             $dataArray['equipment']['short_description'] = $event->short_description;
             $dataArray['equipment']['description'] = $event->description;
             $dataArray['equipment']['details'] = $event->details;
@@ -228,6 +230,7 @@ class EquipmentRentalController extends Controller
                     $dataArray['equipment'][$key]['id'] = $event->id;
                     $dataArray['equipment'][$key]['bigcommerce_id'] = $event->bigcommerce_id;
                     $dataArray['equipment'][$key]['title'] = $event->title;
+                    $dataArray['equipment'][$key]['sku'] = $event->sku;
                     $dataArray['equipment'][$key]['short_description'] = $event->short_description;
                     $dataArray['equipment'][$key]['description'] = $event->description;
                     $dataArray['equipment'][$key]['number_of_tickets'] = $event->number_of_tickets;

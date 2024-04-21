@@ -39,6 +39,7 @@ class EventController extends Controller
         foreach ($events as $key => $event) {
             $dataArray['event'][$key]['id'] = $event->id;
             $dataArray['event'][$key]['title'] = $event->title;
+            $dataArray['event'][$key]['sku'] = $event->sku;
             $dataArray['event'][$key]['short_description'] = $event->short_description;
             $dataArray['event'][$key]['description'] = $event->description;
             $dataArray['event'][$key]['number_of_tickets'] = $event->number_of_tickets;
@@ -74,6 +75,7 @@ class EventController extends Controller
             $dataArray['event']['id'] = $event->id;
             $dataArray['event']['bigcommerce_id'] = $event->bigcommerce_id;
             $dataArray['event']['title'] = $event->title;
+            $dataArray['event']['sku'] = $event->sku;
             $dataArray['event']['short_description'] = $event->short_description;
             $dataArray['event']['description'] = $event->description;
             $dataArray['event']['number_of_tickets'] = $event->number_of_tickets;
@@ -174,6 +176,7 @@ class EventController extends Controller
                     $dataArray['event'][$key]['id'] = $event->id;
                     $dataArray['event'][$key]['bigcommerce_id'] = $event->bigcommerce_id;
                     $dataArray['event'][$key]['title'] = $event->title;
+                    $dataArray['event'][$key]['sku'] = $event->sku;
                     $dataArray['event'][$key]['short_description'] = $event->short_description;
                     $dataArray['event'][$key]['description'] = $event->description;
                     $dataArray['event'][$key]['number_of_tickets'] = $event->number_of_tickets;

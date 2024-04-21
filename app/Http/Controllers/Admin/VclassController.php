@@ -61,6 +61,7 @@ class VclassController extends Controller
         $vclass = new Vclass;
         $vclass->title = $request->title;
         $vclass->slug = Str::slug($request->title);
+        $vclass->sku = $request->sku;
         $vclass->prerequisites = $request->prerequisites;
         $vclass->description = $request->description;
         $imag = null;
@@ -221,6 +222,7 @@ class VclassController extends Controller
     {
         $vclass->title = $request->title;
         $vclass->slug = Str::slug($request->title);
+        $vclass->sku = $request->sku;
         // Commented by swapin No SQLSTATE[42S22]: Column not found: 1054 Unknown column 'short_description' in 'field list'
         // $vclass->short_description = $request->short_description;
         // Swapin End

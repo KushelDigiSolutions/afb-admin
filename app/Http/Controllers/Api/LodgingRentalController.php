@@ -136,6 +136,7 @@ class LodgingRentalController extends Controller
         foreach ($events as $key => $event) {
             $dataArray['event'][$key]['id'] = $event->id;
             $dataArray['event'][$key]['title'] = $event->title;
+            $dataArray['event'][$key]['sku'] = $event->sku;
             $dataArray['event'][$key]['short_description'] = $event->short_description;
             $dataArray['event'][$key]['description'] = $event->description;
             $dataArray['event'][$key]['number_of_tickets'] = $event->number_of_tickets;
@@ -169,6 +170,7 @@ class LodgingRentalController extends Controller
             $dataArray['lodging']['id'] = $lodging->id;
             $dataArray['lodging']['bigcommerce_id'] = $lodging->bigcommerce_id;
             $dataArray['lodging']['title'] = $lodging->title;
+            $dataArray['lodging']['sku'] = $lodging->sku;
             $dataArray['lodging']['short_description'] = $lodging->short_description;
             $dataArray['lodging']['description'] = $lodging->description;
             $dataArray['lodging']['number_of_tickets'] = $lodging->number_of_tickets;
@@ -251,6 +253,7 @@ class LodgingRentalController extends Controller
                     $dataArray['lodging'][$key]['id'] = $event->id;
                     $dataArray['lodging'][$key]['bigcommerce_id'] = $event->bigcommerce_id;
                     $dataArray['lodging'][$key]['title'] = $event->title;
+                    $dataArray['lodging'][$key]['sku'] = $event->sku;
                     $dataArray['lodging'][$key]['short_description'] = $event->short_description;
                     $dataArray['lodging'][$key]['description'] = $event->description;
                     $dataArray['lodging'][$key]['number_of_tickets'] = $event->number_of_tickets;
