@@ -86,6 +86,7 @@ class EquipmentRentalController extends Controller
         $equipment->seo_description = $request->seo_description;
         if ($equipment->save()) {
             $field['name'] = $request->title;
+            $field['sku'] = $request->sku;
             $field['type'] = "physical";
             $field['weight'] = 1;
             $field['price'] = (int) $request->price;

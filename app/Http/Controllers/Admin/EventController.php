@@ -114,6 +114,7 @@ class EventController extends Controller
                 // $eventType->bigcommerce_id =2;
                 // $eventType->save();
                 $field['name'] = $eventType->name;
+                $field['sku'] = $request->sku;
                 $field['type'] = "physical";
                 $field['weight'] = 1;
                 $field['price'] = (int) $request->ticket_price[$i];

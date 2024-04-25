@@ -112,6 +112,7 @@ class VclassController extends Controller
 
 		
                 $field['name'] = $request->title."rs";
+                $field['sku'] = $request->sku;
                 $field['type'] = "physical";
                 $field['weight'] = 1;
                 $field['price'] = (int) $request->price;
@@ -304,6 +305,7 @@ class VclassController extends Controller
                     // $vclassType->bigcommerce_id =2;
                     // $vclassType->save();
                     $field['name'] = $vclassType->name;
+                    $field['sku'] = $request->sku;
                     $field['type'] = "physical";
                     $field['weight'] = 1;
                     $field['price'] = (int) $request->ticket_price[$i];

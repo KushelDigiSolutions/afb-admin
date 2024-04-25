@@ -98,6 +98,7 @@ class LodgingRentalController extends Controller
 
         if ($vclass->save()) {
             $field['name'] = $request->title;
+            $field['sku'] = $request->sku;
             $field['type'] = "physical";
             $field['weight'] = 1;
             $field['price'] = (int) $request->price;
