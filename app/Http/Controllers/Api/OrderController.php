@@ -29,7 +29,7 @@ class OrderController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                "X-Auth-Token: ".env('JWT_SECRET')
             ],
         ]);
 

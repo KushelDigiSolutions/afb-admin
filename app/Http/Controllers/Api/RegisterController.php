@@ -56,7 +56,7 @@ class RegisterController extends Controller
             CURLOPT_POSTFIELDS => $dataa,
             CURLOPT_HTTPHEADER => [
                 "Content-Type: application/json",
-                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                "X-Auth-Token: ".env('JWT_SECRET')
             ],
         ]);
 

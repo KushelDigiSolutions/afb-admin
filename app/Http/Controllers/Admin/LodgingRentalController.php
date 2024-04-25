@@ -120,7 +120,7 @@ class LodgingRentalController extends Controller
                 CURLOPT_HTTPHEADER => [
                     "Accept: application/json",
                     "Content-Type: application/json",
-                    "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                    "X-Auth-Token: ".env('JWT_SECRET')
                 ],
             ]);
             $response = curl_exec($curl);
@@ -169,7 +169,7 @@ class LodgingRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                            "X-Auth-Token: ".env('JWT_SECRET')
                         ],
                     ]);
 
@@ -292,7 +292,7 @@ class LodgingRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                            "X-Auth-Token: ".env('JWT_SECRET')
                         ],
                     ]);
 
@@ -339,7 +339,7 @@ class LodgingRentalController extends Controller
                             CURLOPT_HTTPHEADER => [
                                 "Accept: application/json",
                                 "Content-Type: application/json",
-                                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                                "X-Auth-Token: ".env('JWT_SECRET')
                             ],
                         ]);
 
@@ -393,7 +393,7 @@ class LodgingRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                            "X-Auth-Token: ".env('JWT_SECRET')
                         ],
                     ]);
 
@@ -428,7 +428,7 @@ class LodgingRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                            "X-Auth-Token: ".env('JWT_SECRET')
                         ],
                     ]);
 
@@ -462,7 +462,7 @@ class LodgingRentalController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                "X-Auth-Token: ".env('JWT_SECRET')
             ],
         ]);
         $response1 = curl_exec($curl);
@@ -489,7 +489,7 @@ class LodgingRentalController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                "X-Auth-Token: ".env('JWT_SECRET')
             ],
         ]);
         $response1 = curl_exec($curl);
@@ -514,7 +514,7 @@ class LodgingRentalController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: b4rd5x5aimj4zwv6arra5bdle8qoi8w"
+                "X-Auth-Token: ".env('JWT_SECRET')
             ],
         ]);
 
