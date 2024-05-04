@@ -57,7 +57,14 @@ class VclassController extends Controller
 
     public function store(Request $request)
     {
-		
+        if(empty($request->sku)){
+            return redirect()->back()->withErrors(['error' => 'Sku must require']);
+      }
+      
+      $existSku = Vclass::where('sku', $request->sku)->first('id');
+      if(!empty($existSku)){
+       return redirect()->back()->withErrors(['error' => 'Sku must require']);
+      }
         $vclass = new Vclass;
         $vclass->title = $request->title;
         $vclass->slug = Str::slug($request->title);
@@ -158,7 +165,7 @@ class VclassController extends Controller
 					
                     if ($imag && $result['data']['id']) {
                         $field1['is_thumbnail'] = true;
-                        $field1['image_url'] = $imag;
+                        $field1['image_url'] = url('backend/admin/images/vclass_management/vclass/'.$imag);
                         $dataa1 = json_encode($field1);
 
                         $curl = curl_init();
