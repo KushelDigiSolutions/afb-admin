@@ -58,6 +58,10 @@ class EventController extends Controller
 
     public function store(Request $request)
     {
+        if(empty($request->tickettype)){
+            return redirect()->back()->withErrors(['error' => 'ticket type require']);
+        }
+      
         $event = new Event;
         $event->title = $request->title;
         $event->slug = Str::slug($request->title);
@@ -157,13 +161,13 @@ class EventController extends Controller
                 if ($result['data']['id']) {
                     if ($imag && $eventType->bigcommerce_id) {
                         $field1['is_thumbnail'] = true;
-                        $field1['image_url'] = $imag;
+                        $field1['image_url'] =  url('backend/admin/images/event_management/events/'.$imag);
                         $dataa1 = json_encode($field1);
 
                         $curl = curl_init();
 
                         curl_setopt_array($curl, [
-                            CURLOPT_URL => " https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/" . $eventType->bigcommerce_id . "/images",
+                            CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/".$result['data']['id']. "/images",
                             CURLOPT_RETURNTRANSFER => true,
                             CURLOPT_ENCODING => "",
                             CURLOPT_MAXREDIRS => 10,
