@@ -18,7 +18,7 @@ class OrderController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v2/orders/" . $order_id,
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v2/orders/" . $order_id,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -29,7 +29,7 @@ class OrderController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: ".env('JWT_SECRET')
+                "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
             ],
         ]);
 

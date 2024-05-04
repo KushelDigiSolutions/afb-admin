@@ -97,7 +97,7 @@ class EquipmentRentalController extends Controller
             $curl = curl_init();
 
             curl_setopt_array($curl, [
-                CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products",
+                CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => "",
                 CURLOPT_MAXREDIRS => 10,
@@ -109,7 +109,7 @@ class EquipmentRentalController extends Controller
                 CURLOPT_HTTPHEADER => [
                     "Accept: application/json",
                     "Content-Type: application/json",
-                    "X-Auth-Token: ".env('JWT_SECRET')
+                    "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
                 ],
             ]);
             $response = curl_exec($curl);
@@ -143,7 +143,7 @@ class EquipmentRentalController extends Controller
                     $curl = curl_init();
 
                     curl_setopt_array($curl, [
-                        CURLOPT_URL => " https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/".$result['data']['id']. "/images",
+                        CURLOPT_URL => " https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/".$result['data']['id']. "/images",
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_ENCODING => "",
                         CURLOPT_MAXREDIRS => 10,
@@ -155,7 +155,7 @@ class EquipmentRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: ".env('JWT_SECRET')
+                            "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
                         ],
                     ]);
 
@@ -251,7 +251,7 @@ class EquipmentRentalController extends Controller
                     $curl = curl_init();
 
                     curl_setopt_array($curl, [
-                        CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products",
+                        CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products",
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_ENCODING => "",
                         CURLOPT_MAXREDIRS => 10,
@@ -263,7 +263,7 @@ class EquipmentRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: ".env('JWT_SECRET')
+                            "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
                         ],
                     ]);
 
@@ -287,7 +287,7 @@ class EquipmentRentalController extends Controller
                         $curl = curl_init();
 
                         curl_setopt_array($curl, [
-                            CURLOPT_URL => " https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $vclassType->bigcommerce_id . "/images",
+                            CURLOPT_URL => " https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/" . $vclassType->bigcommerce_id . "/images",
                             CURLOPT_RETURNTRANSFER => true,
                             CURLOPT_ENCODING => "",
                             CURLOPT_MAXREDIRS => 10,
@@ -299,7 +299,7 @@ class EquipmentRentalController extends Controller
                             CURLOPT_HTTPHEADER => [
                                 "Accept: application/json",
                                 "Content-Type: application/json",
-                                "X-Auth-Token: ".env('JWT_SECRET')
+                                "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
                             ],
                         ]);
 
@@ -341,7 +341,7 @@ class EquipmentRentalController extends Controller
                     $curl = curl_init();
 
                     curl_setopt_array($curl, [
-                        CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $request->bigcomm[$i],
+                        CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/" . $request->bigcomm[$i],
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_ENCODING => "",
                         CURLOPT_MAXREDIRS => 10,
@@ -353,7 +353,7 @@ class EquipmentRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: ".env('JWT_SECRET')
+                            "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
                         ],
                     ]);
 
@@ -376,7 +376,7 @@ class EquipmentRentalController extends Controller
                     $curl = curl_init();
 
                     curl_setopt_array($curl, [
-                        CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $request->bigcomm[$i] . "/images/" . $vclassType->bigcommerce_image_id,
+                        CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/" . $request->bigcomm[$i] . "/images/" . $vclassType->bigcommerce_image_id,
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_ENCODING => "",
                         CURLOPT_MAXREDIRS => 10,
@@ -388,7 +388,7 @@ class EquipmentRentalController extends Controller
                         CURLOPT_HTTPHEADER => [
                             "Accept: application/json",
                             "Content-Type: application/json",
-                            "X-Auth-Token: ".env('JWT_SECRET')
+                            "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
                         ],
                     ]);
 
@@ -410,7 +410,7 @@ class EquipmentRentalController extends Controller
         $data = json_encode($field1);
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/channel-assignments",
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/channel-assignments",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -422,7 +422,7 @@ class EquipmentRentalController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: ".env('JWT_SECRET')
+                "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
             ],
         ]);
         $response1 = curl_exec($curl);
@@ -437,7 +437,7 @@ class EquipmentRentalController extends Controller
         $data = json_encode($field1);
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $productId. "/modifiers",
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/" . $productId. "/modifiers",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -449,7 +449,7 @@ class EquipmentRentalController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: ".env('JWT_SECRET')
+                "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
             ],
         ]);
         $response1 = curl_exec($curl);
@@ -463,7 +463,7 @@ class EquipmentRentalController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/catalog/products/" . $equipment->bigcommerce_id,
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/" . $equipment->bigcommerce_id,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -474,7 +474,7 @@ class EquipmentRentalController extends Controller
             CURLOPT_HTTPHEADER => [
                 "Accept: application/json",
                 "Content-Type: application/json",
-                "X-Auth-Token: ".env('JWT_SECRET')
+                "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
             ],
         ]);
 

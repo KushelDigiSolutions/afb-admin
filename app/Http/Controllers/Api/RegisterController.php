@@ -45,7 +45,7 @@ class RegisterController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.bigcommerce.com/stores/suzeuussqe/v3/customers",
+            CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/customers",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -56,7 +56,7 @@ class RegisterController extends Controller
             CURLOPT_POSTFIELDS => $dataa,
             CURLOPT_HTTPHEADER => [
                 "Content-Type: application/json",
-                "X-Auth-Token: ".env('JWT_SECRET')
+                "X-Auth-Token: ".env('BIGCOMMERCE_TOKEN')
             ],
         ]);
 
