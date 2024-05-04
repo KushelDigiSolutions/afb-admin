@@ -63,7 +63,7 @@ class VclassController extends Controller
       
       $existSku = Vclass::where('sku', $request->sku)->first('id');
       if(!empty($existSku)){
-       return redirect()->back()->withErrors(['error' => 'Sku must require']);
+       return redirect()->back()->withErrors(['error' => 'Sku already exist']);
       }
         $vclass = new Vclass;
         $vclass->title = $request->title;

@@ -61,7 +61,16 @@ class EventController extends Controller
         if(empty($request->tickettype)){
             return redirect()->back()->withErrors(['error' => 'ticket type require']);
         }
-      
+        
+        if(empty($request->sku)){
+                return redirect()->back()->withErrors(['error' => 'Sku must require']);
+        }
+        
+        $existSku = Vclass::where('sku', $request->sku)->first('id');
+        if(!empty($existSku)){
+        return redirect()->back()->withErrors(['error' => 'Sku already exist']);
+        }
+
         $event = new Event;
         $event->title = $request->title;
         $event->slug = Str::slug($request->title);

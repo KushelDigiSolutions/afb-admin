@@ -65,6 +65,15 @@ class LodgingRentalController extends Controller
 
     public function store(Request $request)
     {
+
+        if(empty($request->sku)){
+                return redirect()->back()->withErrors(['error' => 'Sku must require']);
+        }
+        
+        $existSku = Vclass::where('sku', $request->sku)->first('id');
+        if(!empty($existSku)){
+        return redirect()->back()->withErrors(['error' => 'Sku already exist']);
+        }
         $vclass = new Lodging;
         $vclass->title = $request->title;
         $vclass->slug = Str::slug($request->title);
@@ -152,13 +161,13 @@ class LodgingRentalController extends Controller
                 
                 if ($imag && $result['data']['id']) {
                     $field1['is_thumbnail'] = true;
-                    $field1['image_url'] = $imag;
+                    $field1['image_url'] =  url('backend/admin/images/lodging_rental/vclasss/'.$imag);
                     $dataa1 = json_encode($field1);
 
                     $curl = curl_init();
 
                     curl_setopt_array($curl, [
-                        CURLOPT_URL => " https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/".$result['data']['id']. "/images",
+                        CURLOPT_URL => "https://api.bigcommerce.com/stores/".env('BIG_STORE')."/v3/catalog/products/".$result['data']['id']. "/images",
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_ENCODING => "",
                         CURLOPT_MAXREDIRS => 10,
