@@ -62,7 +62,7 @@ class EquipmentRentalController extends Controller
             return redirect()->back()->withErrors(['error' => 'Sku must require']);
         }
         
-        $existSku = Vclass::where('sku', $request->sku)->first('id');
+        $existSku = Equipment::where('sku', $request->sku)->first('id');
         if(!empty($existSku)){
             return redirect()->back()->withErrors(['error' => 'Sku already exist']);
         }
